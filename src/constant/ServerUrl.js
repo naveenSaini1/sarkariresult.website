@@ -1,5 +1,5 @@
-export  const    HOST_ADDRESS   =   "http://localhost:8080";
-export  const    API_HOST_ADDRESS   =   "http://localhost:8080/api";
+export  const    HOST_ADDRESS   =   "http://localhost:8081";
+export  const    API_HOST_ADDRESS   =   "http://localhost:8081/api";
 export const    endPoints   =   {
     getThePost:"/getThePost",
     getTheStates:"/getTheStateList",
