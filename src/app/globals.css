@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+@layer utilities {
+  @keyframes blink-text {
+    0%, 100% {
+      color: #1D4ED8; /* Blue color */
+    }
+    50% {
+      color: #DC2626; /* Red color */
+    }
+  }
+
+  .blinking-text {
+    animation: blink-text 1s infinite;
+  }
+}
