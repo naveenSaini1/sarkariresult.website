@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -63,11 +65,14 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			+ "4. Format tables using Tailwind CSS classes\n"
 			+ "5. Color all links blue using Tailwind classes\n"
 			+ "6. Remove any content related to WhatsApp, Telegram, social media, or Play Store\n"
-			+ "7. Replace any links containing 'freejobalert' with 'sarkarresult.website'\n"
+			+ "7. make sure all the html tage should be right so on next js build time they should not produce any error \n"
 			+ "8. Exclude any script tags\n"
 			+ "9. remove that code which are not valid in next js component like doubble className in same tag "
 			+ "10. Include a JSX comment summarizing the component's content\n"
-			+ "11. Provide only the JSX code inside the component function, without surrounding HTML, head, or body tags\n"
+			+ "11 Ensure that the component adheres to the Next.js standards,"
+			+ "12 All the open tag brackets have close brackets"
+			+ "13 The generated code should be free from syntax errors and should be ready to use in a Next.js project without requiring further modification."
+			+ "14. Provide only the JSX code inside the component function, without surrounding HTML, head, or body tags\n"
 			+ "\n"
 			+ "Use this structure:\n"
 			+ "\n"
@@ -89,7 +94,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			+ "Return only these two values separated by a comma. If either is not found, use 0 for vacancy and \"Not specified\" for the date.\n"
 			+ "\n"
 			+ "\"%s\"";
-	private final String PROMPT_FOR_VALIDATION = "Validate and correct the following Next.js component: %s just return the code without any explations";
+	private final String PROMPT_FOR_VALIDATION = "Validate and correct the following Next.js component ane make sure the code follow the next js standards and all the open tag brackets have close brackets: %s just return the code without any explations";
 	
 	@Value("${file.path}")
 	private String folderPath;
@@ -117,8 +122,6 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			System.out.println(el.html().length()+" ==========");
 
 			String  valudString= el.html();
-			if(valudString.length()>DefaultConstants.CONVERT_THE_STRING_TO_LIMIT)
-						  valudString= el.html().substring(0,DefaultConstants.CONVERT_THE_STRING_TO_LIMIT);
 			
 			System.out.println(valudString.length()+" == split arrr========");
 
@@ -126,17 +129,39 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			
 			System.out.println(arr.length()+" == 1st arrr========");
 
-					//arr	=	commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_VALIDATION,arr));
+			if(arr.length()>DefaultConstants.CONVERT_THE_STRING_TO_LIMIT) {
+				  arr= arr.substring(0,DefaultConstants.CONVERT_THE_STRING_TO_LIMIT);
+	
+					arr	=	commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_VALIDATION,arr));
 			
-					//System.out.println(arr.length()+" == 2nst arrr========");
+					System.out.println(arr.length()+" == 2nst arrr========");
 
+			}
+			Integer count = countTripleBackticks(arr);
+			System.out.println(count);
+			
+			if(count==1) {
+				
+				arr= arr.substring(0,DefaultConstants.CONVERT_THE_STRING_TO_SECOND_LIMIT);
+				
+				arr	=	commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_VALIDATION,arr));
+		
+				System.out.println(arr.length()+" == thirdnst arrr========");
+			}
+			
+			
+			cleanedResponse	= extractString(arr);
+			
 			
 
-			cleanedResponse = arr.replaceAll("```jsx", "")
-                      .replaceAll("```", "")
+			cleanedResponse = arr
+					.replaceAll("jsx", "")
                       .replaceAll("javascript", "")
 						.replaceAll("use client", "")
+						.replaceAll("WWW.FREEJOBALERT.COM", "")
 	                      .trim();
+			
+			
 			
 			
 			if(cleanedResponse.startsWith("html")) {
@@ -155,7 +180,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			response[1]=vacancyAndDate[0];
 			response[2]=vacancyAndDate[1];
 			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			
 		}
 		
@@ -166,6 +191,41 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 		
 	}
 	
+	
+	public static String extractString(String s) {
+        /**
+         * Extracts the string enclosed within triple backticks (````) from the input string.
+         *
+         * @param s The input string.
+         * @return The extracted string, or an empty string if no match is found.
+         */
+        String pattern = "```(.*?)```";
+        Pattern regex = Pattern.compile(pattern, Pattern.DOTALL);
+        Matcher matcher = regex.matcher(s);
+        if (matcher.find()) {
+            return matcher.group(1);
+        } else {
+            return "";
+        }
+    }
+	
+	
+	 public static int countTripleBackticks(String s) {
+	        /**
+	         * Counts the number of occurrences of triple backticks (````) in the input string.
+	         *
+	         * @param s The input string.
+	         * @return The count of triple backticks.
+	         */
+	        String pattern = "```";
+	        Pattern regex = Pattern.compile(pattern);
+	        Matcher matcher = regex.matcher(s);
+	        int count = 0;
+	        while (matcher.find()) {
+	            count++;
+	        }
+	        return count;
+	    }
 	public void getTheNewUpdateLink() throws InterruptedException {
 		 Document 		doc				=	null;
 		 
@@ -217,7 +277,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			
 		
 	}
-	public void saveFileProcess(String href,String title,Integer active) throws Exception {
+	public void saveFileProcess(String href,String title,Integer active) {
 		
 			 String[]		content			=	null;
 			 String			originalTitle	=	null;
@@ -230,6 +290,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			 originalTitle	=	title;
 			 System.out.println(originalTitle);
 			 System.out.println(href);
+			try {
 		
 			 newTitle		=	commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_ALERTNATE_TITLE, originalTitle));
 			 // let's take first store the original title and make our own title
@@ -252,6 +313,11 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 				 if(category.size()>0)
 					 InsertIntoCoursePost(category, originalTitle);
 			 }
+			 
+			}
+			catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
 		
 		
 	}
@@ -271,7 +337,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
             bufferedWriter.write(content);
             bufferedWriter.close();
         } catch (IOException e) {
-            e.printStackTrace();
+        	System.out.println(e.getMessage());
         }
     
 		
@@ -281,18 +347,13 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	public void InsertIntoCoursePost(HashSet<String> list,String origionalTitle) {
 		List<CoursePost>	records		=	 new ArrayList<>();
 		Map<String,Integer>	map			= 	 new CategorysConstants().getTheCategoryIdMap();
-		System.out.println(map.get("JK"));
-		System.out.println(map);
-		System.out.println(list);
+		
 		for(String i:list) {
 			CoursePost		cPost	=	 new CoursePost();
-			System.out.println(i+"course name"+origionalTitle);
 			cPost.setCourseId(map.get(i));
 			cPost.setOrigionalPostId(origionalTitle);
 			records.add(cPost);
 		}
-		System.out.println(records);
-		
 		postRepo.insertIntoCoursePostId(records);
 		
 	}
@@ -330,7 +391,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 		         
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}  
 		
 		

@@ -98,13 +98,7 @@
         <version>0.62.2</version>
     </dependency>
     
-    <!-- https://mvnrepository.com/artifact/org.pegdown/pegdown -->
-<dependency>
-    <groupId>org.pegdown</groupId>
-    <artifactId>pegdown</artifactId>
-    <version>1.6.0</version>
-    <scope>test</scope>
-</dependency>
+
 
     
   <dependency>

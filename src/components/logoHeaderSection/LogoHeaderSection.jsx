@@ -13,7 +13,7 @@ const LogoHeaderSection = async () => {
             <header className="mb-10">
                 <section className="flex w-full ">
                     <div className="w-[20%] flex justify-center items-center">
-                        <Image src={"/logo.png"} width={200} height={100} />
+                        <Image src={"/logo.png"} width={200} height={100} alt="image" />
                     </div>
                     <div className="w-[70%] p-1 flex justify-center items-center">
                         <p>Sarkari Alert Result is an online portal where you can easily access government job notifications, including the latest job updates, admit cards, and Sarkari Naukri results.</p>
@@ -24,7 +24,7 @@ const LogoHeaderSection = async () => {
                     <ul className="flex list-none gap-2 flex-wrap">
                     {centerPost.map((el) => {
                             return (
-                                <li className="bg-thridBgColor px-3 py-2 rounded-xl hover:bg-primaryBgColor hover:text-black text-primaryTxtColor shadow-lg text-xl">
+                                <li key={el} className="bg-thridBgColor px-3 py-2 rounded-xl hover:bg-primaryBgColor hover:text-black text-primaryTxtColor shadow-lg text-xl">
                                     <Link href={"/category/" + el+"?page=1"}>{el}</Link>
                                 </li>
                             )
@@ -56,7 +56,7 @@ const LogoHeaderSection = async () => {
                         <li className="bg-thridBgColor text-xl px-3 py-2 rounded-xl hover:bg-primaryBgColor hover:text-black text-primaryTxtColor shadow-lg"><Link href={""}>Other State</Link></li> */}
 
                         {statePost.map((el) => {                            return (
-                                <li className="bg-thridBgColor px-3 py-2 rounded-xl hover:bg-primaryBgColor hover:text-black text-primaryTxtColor shadow-lg text-xl">
+                                <li key={el} className="bg-thridBgColor px-3 py-2 rounded-xl hover:bg-primaryBgColor hover:text-black text-primaryTxtColor shadow-lg text-xl">
                                     <Link href={"/category/" + el+"?page=1"}>{el}</Link>
                                 </li>
                             )
