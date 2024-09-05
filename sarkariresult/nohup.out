@@ -786,3 +786,1550 @@ sleep interrupted
 2024-09-05T03:23:06.957Z  WARN 470005 --- [sarkariresult] [nio-8081-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.nio.channels.ClosedChannelException]
 2024-09-05T03:23:06.966Z  INFO 470005 --- [sarkariresult] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-09-05T03:23:06.981Z  INFO 470005 --- [sarkariresult] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.9)
+
+2024-09-05T10:24:16.283Z  INFO 563351 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Starting SarkariresultApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 563351 (/projects/sarkariresult.website/sarkariresult/sarkariresult-0.0.1-SNAPSHOT.jar started by root in /projects/sarkariresult.website/sarkariresult)
+2024-09-05T10:24:16.289Z  INFO 563351 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-09-05T10:24:18.854Z  INFO 563351 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-09-05T10:24:18.886Z  INFO 563351 --- [sarkariresult] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-05T10:24:18.887Z  INFO 563351 --- [sarkariresult] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-05T10:24:18.956Z  INFO 563351 --- [sarkariresult] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-05T10:24:18.958Z  INFO 563351 --- [sarkariresult] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2502 ms
+2024-09-05T10:24:20.218Z  INFO 563351 --- [sarkariresult] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@151ab2b9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ed066e, org.springframework.security.web.context.SecurityContextHolderFilter@422ab737, org.springframework.security.web.header.HeaderWriterFilter@29bcf51d, org.springframework.security.web.authentication.logout.LogoutFilter@6518fdfd, com.example.sarkariresult.config.jwt.AuthTokenFilter@e146f93, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fde8f7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5403799b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d705112, org.springframework.security.web.session.SessionManagementFilter@60f77af, org.springframework.security.web.access.ExceptionTranslationFilter@7d4d8579, org.springframework.security.web.access.intercept.AuthorizationFilter@648c5fb3]
+2024-09-05T10:24:20.689Z  INFO 563351 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-09-05T10:24:20.746Z  INFO 563351 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Started SarkariresultApplication in 5.169 seconds (process running for 6.356)
+2024-09-05T10:24:27.402Z  INFO 563351 --- [sarkariresult] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-05T10:24:27.402Z  INFO 563351 --- [sarkariresult] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-05T10:24:27.405Z  INFO 563351 --- [sarkariresult] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+syllabus   1
+result   1
+admit   1
+answerKey   1
+2024-09-05T10:24:32.638Z  INFO 563351 --- [sarkariresult] [nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-05T10:24:33.363Z  INFO 563351 --- [sarkariresult] [nio-8081-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63df33e5
+2024-09-05T10:24:33.365Z  INFO 563351 --- [sarkariresult] [nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+result   1
+syllabus   1
+admit   1
+answerKey   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+CISF Constable Apply Online
+https://www.freejobalert.com/cisf-constable-2024/1108017/
+CISF Constable/ Fire (Male) Recruitment 2024 – Apply Online for 1130 Posts
+8438 ==========
+8438 == split arrr========
+9378 == 1st arrr======== first count2
+admit   1
+result   1
+syllabus   1
+answerKey   1
+UPSC CGS Apply Online
+https://www.freejobalert.com/upsc-geo-scientist-2025/1110660/
+admit   1
+result   1
+syllabus   1
+answerKey   1
+UPSC Combined Geo-Scientist Exam 2025 - Apply Online for 85 Posts
+10628 ==========
+10628 == split arrr========
+12596 == 1st arrr======== first count2
+admit   1
+result   1
+syllabus   1
+answerKey   1
+SSC JE Exam Date
+https://www.freejobalert.com/ssc-je-2024/1084033/
+SSC Junior Engineer Exam Date 2024 - Paper-II Exam Date Announced
+21516 ==========
+21516 == split arrr========
+19722 == 1st arrr======== first count2
+admit   1
+result   1
+answerKey   1
+syllabus   1
+admit   1
+syllabus   1
+result   1
+SSC MTS Exam Date
+https://www.freejobalert.com/ssc-mts-2024/1097560/
+answerKey   1
+SSC MTS & Havaldar Exam Date 2024 - Exam Date Announced
+11921 ==========
+11921 == split arrr========
+13491 == 1st arrr======== first count2
+syllabus   1
+answerKey   1
+admit   1
+result   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+SSC CGL Admit Card
+https://www.freejobalert.com/ssc-cgl-2024/1096862/
+SSC CGL Admit Card 2024 - Tier-I Admit Card Download
+17749 ==========
+17749 == split arrr========
+16942 == 1st arrr======== first count2
+admit   1
+result   1
+syllabus   1
+answerKey   1
+LIC HFL Jr Asst Admit Card
+https://www.freejobalert.com/lic-hfl-2024/1102495/
+admit   1
+result   1
+syllabus   1
+answerKey   1
+LIC HFL Junior Assistant Admit Card 2024 - Online Exam Call Letter Download
+11011 ==========
+11011 == split arrr========
+8858 == 1st arrr======== first count2
+admit   1
+result   1
+syllabus   1
+answerKey   1
+Navy INCET Admit Card
+https://www.freejobalert.com/navy-incet-01-2024/1100793/
+Indian Navy INCET 01/2024 Admit Card 2024 - CBT Hall Ticket Download
+13593 ==========
+13593 == split arrr========
+admit   1
+admit   1
+answerKey   1
+result   1
+syllabus   1
+11050 == 1st arrr======== first count2
+admit   1
+syllabus   1
+result   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+SSC SI Result
+https://www.freejobalert.com/ssc-si-2024/1080515/
+SSC SI in Delhi Police & CAPFs Result 2024 - Paper-I Result Released
+18641 ==========
+18641 == split arrr========
+29017 == 1st arrr======== first count2
+admit   1
+result   1
+answerKey   1
+syllabus   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+SSC Selection Posts Result
+https://www.freejobalert.com/ssc-selection-posts-2024/1075304/
+SSC Selection Posts (Phase-XII) Result 2024 - Paper-I (CBE) Result Released
+19157 ==========
+19157 == split arrr========
+25869 == 1st arrr======== first count2
+admit   1
+syllabus   1
+answerKey   1
+result   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+result   1
+admit   1
+answerKey   1
+syllabus   1
+syllabus   1
+admit   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+result   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+syllabus   1
+result   1
+answerKey   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+result   1
+admit   1
+syllabus   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+railwayRrb   1
+admit   1
+answerKey   1
+result   1
+syllabus   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+result   1
+answerKey   1
+syllabus   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+syllabus   1
+result   1
+answerKey   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+result   1
+syllabus   1
+admit   1
+answerKey   1
+syllabus   1
+answerKey   1
+admit   1
+result   1
+UPSC   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+result   1
+admit   1
+syllabus   1
+answerKey   1
+2024-09-05T10:44:17.749Z ERROR 563351 --- [sarkariresult] [nio-8081-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Something Went Wrong] with root cause
+
+java.lang.Exception: Something Went Wrong
+	at com.example.sarkariresult.serviceimpl.PostServiceImpl.getThePaginationTotoal(PostServiceImpl.java:71) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.sarkariresult.controller.post.PostController.getTheTotalNumberPagination(PostController.java:68) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+collage-admissom   1
+admit   1
+syllabus   1
+answerKey   1
+2024-09-05T10:44:17.782Z ERROR 563351 --- [sarkariresult] [nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Something Went Wrong] with root cause
+
+java.lang.Exception: Something Went Wrong
+	at com.example.sarkariresult.serviceimpl.PostServiceImpl.getThePostByCourse(PostServiceImpl.java:53) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.sarkariresult.controller.post.PostController.getThePostByCourse(PostController.java:56) ~[!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+result   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+result   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+answerKey   1
+syllabus   1
+admit   1
+answerKey   1
+result   1
+result   1
+syllabus   1
+admit   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+result   1
+admit   1
+syllabus   1
+answerKey   1
+syllabus   1
+admit   1
+answerKey   1
+result   1
+null  https://www.freejobalert.com/hpcl/10296/#Engineeering--Professional
+HPCL 100 Engineering Professional 2024 Online Link Available
+https://www.freejobalert.com/hpcl/10296/#Engineeering--Professional
+HPCL Recruitment 2024 – Apply Online for 100 Engineering Professional Posts
+96113 ==========
+96113 == split arrr========
+28444 == 1st arrr======== first count1
+2024-09-05T11:01:05.970Z  INFO 563351 --- [sarkariresult] [io-8081-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xee0x010x000x000xea0x030x030x0b0x0b{0x190xde0xa90x0d$0x880xd9L3o"0xa5X0xc60xc80x800xbd0x830xe20x80B0xb70xb2h0x0fpX=0xf4 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+23792 == 2nst arrr========
+null  https://www.freejobalert.com/ukpsc-pcs-2021/932525/
+UKPSC Upper PCS 2021 Selection Result
+https://www.freejobalert.com/ukpsc-pcs-2021/932525/
+UKPSC PCS Result 2021 - Selection Result Released
+32951 ==========
+32951 == split arrr========
+31379 == 1st arrr======== first count1
+21711 == 2nst arrr========
+null  https://www.freejobalert.com/jssc-jmscce-2023/1036209/
+JSSC JMSCCE 2023 Revised Final Answer Key
+https://www.freejobalert.com/jssc-jmscce-2023/1036209/
+JSSC JMSCCE Answer Key 2024 - Revised Final Answer Key Released
+12778 ==========
+12778 == split arrr========
+syllabus   1
+result   1
+admit   1
+answerKey   1
+11843 == 1st arrr======== first count2
+null  https://www.freejobalert.com/deogiri-nagari-sahakari-bank-ltd-sambhajinagar-clerk-2024/1110868/
+Deogiri Nagari Sahakari Bank Ltd, Sambhajinagar 60 clerk 2024 Online Form
+https://www.freejobalert.com/deogiri-nagari-sahakari-bank-ltd-sambhajinagar-clerk-2024/1110868/
+Deogiri Nagari Sahakari Bank Ltd, Sambhajinagar Clerk Recruitment 2024 - Apply Online for 60 Posts
+7082 ==========
+7082 == split arrr========
+5363 == 1st arrr======== first count2
+null  https://www.freejobalert.com/kerala-tet-april-2024/1086787/
+Kerala TET April 2024 Exam Result
+https://www.freejobalert.com/kerala-tet-april-2024/1086787/
+Kerala TET April Result 2024 - Exam Result Released
+12072 ==========
+12072 == split arrr========
+admit   1
+syllabus   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+15412 == 1st arrr======== first count2
+result   1
+admit   1
+syllabus   1
+answerKey   1
+null  https://www.freejobalert.com/rpsc-group-instructor-or-surveyor-or-asst-apprenticeship-advisor-gr-ii-2024/1110403/
+RPSC Group Instructor/Surveyor/Asst Apprenticeship Advisor 2024 Exam Date
+https://www.freejobalert.com/rpsc-group-instructor-or-surveyor-or-asst-apprenticeship-advisor-gr-ii-2024/1110403/
+RPSC Group Instructor/Surveyor/Asst Apprenticeship Advisor Exam Date 2024 - Exam Date Announced
+7739 ==========
+7739 == split arrr========
+syllabus   1
+admit   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+result   1
+answerKey   1
+8891 == 1st arrr======== first count2
+syllabus   1
+result   1
+answerKey   1
+admit   1
+null  https://www.freejobalert.com/ossc-assistant-training-officer-2024/1082349/
+OSSC Assistant Training Officer 2024 Written Exam Provisional Answer Key
+https://www.freejobalert.com/ossc-assistant-training-officer-2024/1082349/
+OSSC Assistant Training Officer Answer Key 2024 - Written Exam Provisional Answer Key Released
+19974 ==========
+19974 == split arrr========
+13028 == 1st arrr======== first count2
+null  https://www.freejobalert.com/jk-bank-apprentice-2024/1090238/
+J&K Bank Apprentice 2024 Online Exam Cutoff Marks
+https://www.freejobalert.com/jk-bank-apprentice-2024/1090238/
+J&K Bank Apprentice Cutoff Marks 2024 - Online Exam Cutoff Marks Released
+8524 ==========
+8524 == split arrr========
+result   1
+admit   1
+answerKey   1
+syllabus   1
+9364 == 1st arrr======== first count2
+null  https://www.freejobalert.com/vilasrao-deshmukh-foundation-group-of-institutions-latur-various-vacancy-2024/1110839/
+Vilasrao Deshmukh Foundation Group of Institutions, Latur 65 Various Vacancy 2024 Offline Form
+https://www.freejobalert.com/vilasrao-deshmukh-foundation-group-of-institutions-latur-various-vacancy-2024/1110839/
+Vilasrao Deshmukh Foundation Group of Institutions, Latur Professor, Librarian & Other Recruitment 2024 - Apply for 65 Posts
+7022 ==========
+7022 == split arrr========
+4918 == 1st arrr======== first count2
+null  https://www.freejobalert.com/bfuhs-medical-officer-2024/1108895/
+BFUHS 400 Medical Officer 2024 Last Date Extended
+https://www.freejobalert.com/bfuhs-medical-officer-2024/1108895/
+BFUHS Medical Officer Recruitment 2024 - Apply Online for 400 Posts
+6788 ==========
+6788 == split arrr========
+5513 == 1st arrr======== first count2
+null  https://www.freejobalert.com/mppsc-state-forest-service-2023/1057047/
+MPPSC State Forest Services Exam 2023 Mains Exam Result
+https://www.freejobalert.com/mppsc-state-forest-service-2023/1057047/
+2024-09-05T11:05:49.602Z ERROR 563351 --- [sarkariresult] [nio-8081-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Something Went Wrong] with root cause
+
+java.lang.Exception: Something Went Wrong
+	at com.example.sarkariresult.serviceimpl.PostServiceImpl.getThePaginationTotoal(PostServiceImpl.java:71) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.sarkariresult.controller.post.PostController.getTheTotalNumberPagination(PostController.java:68) ~[!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+collage-admissom   1
+2024-09-05T11:05:49.619Z ERROR 563351 --- [sarkariresult] [nio-8081-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Something Went Wrong] with root cause
+
+java.lang.Exception: Something Went Wrong
+	at com.example.sarkariresult.serviceimpl.PostServiceImpl.getThePostByCourse(PostServiceImpl.java:53) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.sarkariresult.controller.post.PostController.getThePostByCourse(PostController.java:56) ~[!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+syllabus   1
+admit   1
+answerKey   1
+result   1
+MPPSC State Forest Services Result 2024 - Mains Exam Result Released
+22775 ==========
+22775 == split arrr========
+21322 == 1st arrr======== first count2
+null  https://www.freejobalert.com/navy-ssc-officer-jun-2025/1110759/
+Navy 250 SSC Officer JUN 2025 (AT 25) Online Form
+https://www.freejobalert.com/navy-ssc-officer-jun-2025/1110759/
+Indian Navy SSC Officer JUN 2025 (AT 25) – Apply Online for 250 Posts
+9358 ==========
+9358 == split arrr========
+admit   1
+syllabus   1
+answerKey   1
+result   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+admit   1
+result   1
+syllabus   1
+answerKey   1
+7857 == 1st arrr======== first count2
+admit   1
+result   1
+syllabus   1
+answerKey   1
+null  https://www.freejobalert.com/hpsc-pgt-2024/1102212/
+HPSC PGT 2024 Skill Test Admit Card
+https://www.freejobalert.com/hpsc-pgt-2024/1102212/
+HPSC PGT Admit Card 2024 - Skill Test Admit Card Download
+17770 ==========
+17770 == split arrr========
+result   1
+admit   1
+syllabus   1
+answerKey   1
+railwayRrb   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+2024-09-05T11:07:01.379Z ERROR 563351 --- [sarkariresult] [nio-8081-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Something Went Wrong] with root cause
+
+java.lang.Exception: Something Went Wrong
+	at com.example.sarkariresult.serviceimpl.PostServiceImpl.getThePaginationTotoal(PostServiceImpl.java:71) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.sarkariresult.controller.post.PostController.getTheTotalNumberPagination(PostController.java:68) ~[!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor19.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+collage-admissom   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+2024-09-05T11:07:01.400Z ERROR 563351 --- [sarkariresult] [nio-8081-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.Exception: Something Went Wrong] with root cause
+
+java.lang.Exception: Something Went Wrong
+	at com.example.sarkariresult.serviceimpl.PostServiceImpl.getThePostByCourse(PostServiceImpl.java:53) ~[!/:0.0.1-SNAPSHOT]
+	at com.example.sarkariresult.controller.post.PostController.getThePostByCourse(PostController.java:56) ~[!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at com.example.sarkariresult.config.jwt.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:59) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.6.jar!/:6.2.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar!/:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+admit   1
+syllabus   1
+result   1
+answerKey   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+26412 == 1st arrr======== first count2
+null  https://www.freejobalert.com/jute-corporation-of-india-ltd-various-vacancy-2024/1110758/
+JUTE Corporation of India Ltd 90 Various Vacancy Offline Form 2024
+https://www.freejobalert.com/jute-corporation-of-india-ltd-various-vacancy-2024/1110758/
+JUTE Corporation of India Ltd Various Vacancy Recruitment 2024 - Apply for 90 Posts
+6618 ==========
+6618 == split arrr========
+admit   1
+syllabus   1
+answerKey   1
+result   1
+5058 == 1st arrr======== first count2
+null  https://www.freejobalert.com/apssb/831276/#Constable
+APSSB Head Constable (Telecom) 2020 Exam Schedule
+https://www.freejobalert.com/apssb/831276/#Constable
+APSSB 2024 - Combined Graduate Level Exam Written Exam Admit Card Download
+113417 ==========
+113417 == split arrr========
+admit   1
+result   1
+answerKey   1
+syllabus   1
+syllabus   1
+admit   1
+result   1
+answerKey   1
+result   1
+admit   1
+answerKey   1
+syllabus   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+admit   1
+syllabus   1
+result   1
+answerKey   1
+admit   1
+syllabus   1
+result   1
+answerKey   1
+BR   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+KA   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+KL   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+27396 == 1st arrr======== first count1
+KL   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+KL   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+KL   1
+answerKey   1
+result   1
+syllabus   1
+admit   1
+HR   1
+admit   1
+syllabus   1
+answerKey   1
+result   1
+HR   1
+admit   1
+answerKey   1
+syllabus   1
+result   1
+19308 == 2nst arrr========
+null  https://www.freejobalert.com/zp-rayagada-gram-rozgar-sevak-2024/1110746/
+ZP, Rayagada 130 Gram Rozgar Sevak 2024 Offline Form
+https://www.freejobalert.com/zp-rayagada-gram-rozgar-sevak-2024/1110746/
+ZP, Rayagada Gram Rozgar Sevak Recruitment 2024 - Apply for 130 Posts
+5908 ==========
+5908 == split arrr========
+4773 == 1st arrr======== first count2
+apssb-head-constable-telecom-2020-exam-dates-annou  https://www.freejobalert.com/apssb/831276/#Constable
+null  https://www.freejobalert.com/rpsc-ras-rts-2024/1110180/
+RPSC RAS/ RTS 2024 Exam Date
+https://www.freejobalert.com/rpsc-ras-rts-2024/1110180/
+RPSC RAS/ RTS Exam Date 2024 - Exam Date Announced
+7614 ==========
+7614 == split arrr========
+8468 == 1st arrr======== first count2
+null  https://www.freejobalert.com/cg-set-2024/1080744/
+CGSET 2024 Model Answer Key
+https://www.freejobalert.com/cg-set-2024/1080744/
+CGSET Answer Key 2024 - Model Answer Key Released
+9293 ==========
+9293 == split arrr========
+10484 == 1st arrr======== first count2
+null  https://www.freejobalert.com/tnpsc-group-2-2024/1096152/
+TNPSC CCSE (Group II and IIA Services) 2024 Preliminary Exam Hall Ticket
+https://www.freejobalert.com/tnpsc-group-2-2024/1096152/
+TNPSC CCSE (Group II and IIA Services) Hall Ticket 2024 - Preliminary Exam Hall Ticket Download
+39309 ==========
+39309 == split arrr========
+32522 == 1st arrr======== first count1
+32495 == 2nst arrr========
+Truncated AI Response Length: 30495
+Validated AI Response Length: 31083
+Triple Backticks Count after validation: 2
+null  https://www.freejobalert.com/cochin-shipyard-ltd-project-assistant-2024/1110689/
+Cochin Shipyard Ltd 90 Project Assistant 2024 Online Form
+https://www.freejobalert.com/cochin-shipyard-ltd-project-assistant-2024/1110689/
+Cochin Shipyard Ltd Project Assistant Recruitment 2024 - Apply Online for 90 Posts
+8836 ==========
+8836 == split arrr========
+8489 == 1st arrr======== first count2
+null  https://www.freejobalert.com/fact-graduate-and-technician-apprentice-2024/1110678/
+FACT 84 Graduate & Technician Apprentice 2024 Online Form
+https://www.freejobalert.com/fact-graduate-and-technician-apprentice-2024/1110678/
+FACT Graduate & Technician Apprentice Recruitment 2024 - Apply Online for 84 Posts
+9702 ==========
+9702 == split arrr========
+9765 == 1st arrr======== first count2
+null  https://www.freejobalert.com/nhm-dhule-various-vacancy-2024/1110569/
+NHM, Dhule 56 Various Vacancy 2024 Offline Form
+https://www.freejobalert.com/nhm-dhule-various-vacancy-2024/1110569/
+NHM, Dhule Staff Nurse, MO & Other Recruitment 2024 - Apply for 56 Posts
+9697 ==========
+9697 == split arrr========
+9689 == 1st arrr======== first count2
+null  https://www.freejobalert.com/pmc-multiple-posts-2024/1110538/
+PMC 601 Various Vacancy 2024 Offline Form
+https://www.freejobalert.com/pmc-multiple-posts-2024/1110538/
+PMC Jr Engineer, Aaya & Other Recruitment 2024 - Apply for 601 Posts
+10983 ==========
+10983 == split arrr========
+9003 == 1st arrr======== first count2
+upsc-cgs-apply-online-now-promising-career-civil-s  https://www.freejobalert.com/upsc-geo-scientist-2025/1110660/
+null  https://www.freejobalert.com/sbi-specialist-officer-2024/1110648/
+SBI 55 Specialist Cadre Officer 2024 Online Form
+https://www.freejobalert.com/sbi-specialist-officer-2024/1110648/
+SBI Specialist Cadre Officer Recruitment 2024 - Apply Online for 55 Posts
+8534 ==========
+8534 == split arrr========
+7184 == 1st arrr======== first count2
+null  https://www.freejobalert.com/rajasthan-police-constable-2023/1047016/
+Rajasthan Police Constable 2023 CBT Result
+https://www.freejobalert.com/rajasthan-police-constable-2023/1047016/
+Rajasthan Police Constable Result 2024 - CBT Result Released
+13880 ==========
+13880 == split arrr========
+14096 == 1st arrr======== first count2
+null  https://www.freejobalert.com/gpsc-multiple-vacancy-2023/1043502/
+GPSC Deputy Section Officer/ Deputy Mamlatdar 2023 New Main Written Exam Date
+https://www.freejobalert.com/gpsc-multiple-vacancy-2023/1043502/
+GPSC Deputy Section Officer/ Deputy Mamlatdar Exam Date 2024 - New Main Written Exam Date Announced
+37328 ==========
+37328 == split arrr========
+27028 == 1st arrr======== first count1
+18467 == 2nst arrr========
+null  https://www.freejobalert.com/cgpeb-hostel-superintendent-2023/1057706/
+CGPEB Hostel Superintendent 2024 Written Exam Admit Card
+https://www.freejobalert.com/cgpeb-hostel-superintendent-2023/1057706/
+CGPEB Hostel Superintendent Admit Card 2024 - Written Exam Admit Card Download
+8491 ==========
+8491 == split arrr========
+10057 == 1st arrr======== first count2
+null  https://www.freejobalert.com/ukpsc-pcs-2024/1081830/
+UKPSC Combined State Civil/Upper Subordinate Services Exam 2024 Mains Online Form
+https://www.freejobalert.com/ukpsc-pcs-2024/1081830/
+UKPSC Combined State Civil/ Upper Subordinate Services Exam 2024 - Apply Online for Mains Exam
+17934 ==========
+17934 == split arrr========
+25087 == 1st arrr======== first count2
+j-k-bank-apprentice-2024-online-exam-cutoff-marks  https://www.freejobalert.com/jk-bank-apprentice-2024/1090238/
+null  https://www.freejobalert.com/tnpsc-group-b-and-c-2024/1087665/
+TNPSC CCSE (Group I-B & I-C Services) 2024 Preliminary Exam Tentative Key
+https://www.freejobalert.com/tnpsc-group-b-and-c-2024/1087665/
+TNPSC CCSE (Group I-B & I-C Services) Answer Key 2024 - Preliminary Exam Tentative Key Released
+10926 ==========
+10926 == split arrr========
+10031 == 1st arrr======== first count2
+null  https://www.freejobalert.com/rpsc-assistant-professor-2023/1039781/
+RPSC Assistant Professor 2023 Interview Letter
+https://www.freejobalert.com/rpsc-assistant-professor-2023/1039781/
+RPSC Asst Professor Admit Card 2023 - Interview Letter Download
+16263 ==========
+16263 == split arrr========
+21306 == 1st arrr======== first count2
+null  https://www.freejobalert.com/cgpeb-laboratory-technician-2024/1075315/
+CGPEB Laboratory Technician 2024 Model Answer Key
+https://www.freejobalert.com/cgpeb-laboratory-technician-2024/1075315/
+CGPEB Laboratory Technician Answer Key 2024 - Model Answer Key Released
+9362 ==========
+9362 == split arrr========
+9174 == 1st arrr======== first count2
+null  https://www.freejobalert.com/osssc-multiple-vacancy-2023/1059130/
+OSSSC Livestock Inspector, Forester & Forest Guard 2023 Written Test Provisional Screening List
+https://www.freejobalert.com/osssc-multiple-vacancy-2023/1059130/
+OSSSC Livestock Inspector, Forester & Forest Guard Result 2024 - Written Test Provisional Screening List Released
+13683 ==========
+13683 == split arrr========
+11969 == 1st arrr======== first count2
+mppsc-state-forest-services-exam-2023-mains-result  https://www.freejobalert.com/mppsc-state-forest-service-2023/1057047/
+null  https://www.freejobalert.com/nicl-administrative-officer-2024/1069375/
+NICL Administrative Officer 2024 Online Mains Exam Result
+https://www.freejobalert.com/nicl-administrative-officer-2024/1069375/
+NICL Administrative Officer Result 2024 - Online Mains Exam Result Released
+11962 ==========
+11962 == split arrr========
+15169 == 1st arrr======== first count2
+null  https://www.freejobalert.com/hp-tet-june-2024/1089657/
+HP TET June 2024 Final Answer Key
+https://www.freejobalert.com/hp-tet-june-2024/1089657/
+HP TET June Result 2024 - Final Answer Key & Exam Result Released
+13498 ==========
+13498 == split arrr========
+10878 == 1st arrr======== first count2
+result   1
+syllabus   1
+answerKey   1
+admit   1
+null  https://www.freejobalert.com/ossc-combined-graduate-level-2023/1057423/
+OSSC CGL (Group-B & C) 2023 Main Written Exam Provisional Answer Key & Objections
+https://www.freejobalert.com/ossc-combined-graduate-level-2023/1057423/
+OSSC CGL (Group B & C) Answer Key 2024 - Main Written Exam Provisional Answer Key & Objections Released
+18153 ==========
+18153 == split arrr========
+21660 == 1st arrr======== first count2
+null  https://www.freejobalert.com/rrc-southern-railway-sports-person-2024/1110528/
+RRC, Southern Railway 67 Sports Person 2024 Online Form
+https://www.freejobalert.com/rrc-southern-railway-sports-person-2024/1110528/
+RRC, Southern Railway Sports Person Recruitment 2024 - Apply Online for 67 Posts
+8752 ==========
+8752 == split arrr========
+7166 == 1st arrr======== first count2
+null  https://www.freejobalert.com/mppsc-mo-2024/1105638/
+MPPSC 895 Medical Officer 2024 Online Link Available
+https://www.freejobalert.com/mppsc-mo-2024/1105638/
+MPPSC Medical Officer Recruitment 2024 - Apply Online for 895 Posts
+8559 ==========
+8559 == split arrr========
+6032 == 1st arrr======== first count2
+null  https://www.freejobalert.com/gsssb-gujarat-subordinate-service-exam-2024/1070532/
+GSSSB Gujarat Subordinate Services Exam 2024 CBRT Revised Final Key
+https://www.freejobalert.com/gsssb-gujarat-subordinate-service-exam-2024/1070532/
+GSSSB Gujarat Subordinate Services Exam Answer Key 2024 - CBRT Revised Final Key Released
+20390 ==========
+20390 == split arrr========
+25190 == 1st arrr======== first count1
+18492 == 2nst arrr========
+null  https://www.freejobalert.com/delhi-home-guard-vacancy-2024/1073479/
+Delhi Home Guard 2024 PMET Admit Card
+https://www.freejobalert.com/delhi-home-guard-vacancy-2024/1073479/
+DGHG, New Delhi Home Guard Admit Card 2024 - PMET Admit Card Download
+9814 ==========
+9814 == split arrr========
+11996 == 1st arrr======== first count2
+null  https://www.freejobalert.com/tnpsc-combined-technical-service-exam-2024/1090427/
+TNPSC Combined Technical Service Exam 2024 Tentative Key
+https://www.freejobalert.com/tnpsc-combined-technical-service-exam-2024/1090427/
+TNPSC Combined Technical Service Exam Answer Key 2024 - Tentative Key Released
+15814 ==========
+15814 == split arrr========
+result   1
+answerKey   1
+admit   1
+syllabus   1
+15563 == 1st arrr======== first count2
+null  https://www.freejobalert.com/kudumbashree-haritha-karma-sena-co-ordinator-2024/1110479/
+Kudumbashree 53 Haritha Karma Sena Co-Ordinator Offline Form 2024
+https://www.freejobalert.com/kudumbashree-haritha-karma-sena-co-ordinator-2024/1110479/
+Kudumbashree Haritha Karma Sena Co-Ordinator Recruitment 2024 - Apply for 53 Posts
+7956 ==========
+7956 == split arrr========
+7277 == 1st arrr======== first count2
+null  https://www.freejobalert.com/jssc-excise-constable-2023/1034810/
+JSSC Excise Constable 2023 Physical Eligibility Test Postponed
+https://www.freejobalert.com/jssc-excise-constable-2023/1034810/
+JSSC Excise Constable PET Date 2024 - Physical Eligibility Test Postponed
+12147 ==========
+12147 == split arrr========
+admit   1
+syllabus   1
+answerKey   1
+result   1
+12800 == 1st arrr======== first count2
+null  https://www.freejobalert.com/becil-nursing-officer-2024/1110476/
+BECIL 100 Nursing Officer 2024 Offline Form
+https://www.freejobalert.com/becil-nursing-officer-2024/1110476/
+BECIL Nursing Officer Recruitment 2024 - Apply for 100 Posts
+6654 ==========
+6654 == split arrr========
+admit   1
+syllabus   1
+answerKey   1
+result   1
+6278 == 1st arrr======== first count2
+hp-tet-june-2024-final-answer-key-released-check-n  https://www.freejobalert.com/hp-tet-june-2024/1089657/
+null  https://www.freejobalert.com/mgims-maharashtra-faculty-2024/1110392/
+MGIMS, Maharashtra 60 Faculty Offline Form 2024
+https://www.freejobalert.com/mgims-maharashtra-faculty-2024/1110392/
+MGIMS, Maharashtra Faculty Recruitment 2024 - Apply for 60 Posts
+6722 ==========
+6722 == split arrr========
+admit   1
+result   1
+syllabus   1
+answerKey   1
+8138 == 1st arrr======== first count2
+rpsc-group-instructor-surveyor-asst-apprenticeship  https://www.freejobalert.com/rpsc-group-instructor-or-surveyor-or-asst-apprenticeship-advisor-gr-ii-2024/1110403/
+navy-incet-admit-card-your-entry-indian-navy  https://www.freejobalert.com/navy-incet-01-2024/1100793/
+null  https://www.freejobalert.com/tnpsc-group-1-2024/1084025/
+TNPSC CCSE-I (Group-I Services) 2024 Preliminary Exam Result
+https://www.freejobalert.com/tnpsc-group-1-2024/1084025/
+TNPSC CCSE-I (Group-I Services) Result 2024 - Preliminary Exam Result Released
+15553 ==========
+15553 == split arrr========
+11621 == 1st arrr======== first count2
+null  https://www.freejobalert.com/dme-ap-sr-resident-2024/1107634/
+DME, AP Senior Resident 2024 Provisional Merit list
+https://www.freejobalert.com/dme-ap-sr-resident-2024/1107634/
+DME, AP Senior Resident Result 2024- Provisional Merit list Released
+7724 ==========
+7724 == split arrr========
+6156 == 1st arrr======== first count2
+null  https://www.freejobalert.com/osssc-teacher-2024/1081450/
+OSSSC 2629 Teacher 2024 Online Form
+https://www.freejobalert.com/osssc-teacher-2024/1081450/
+OSSSC Teacher Recruitment 2024 - Apply Online for 2629 Posts
+13253 ==========
+13253 == split arrr========
+12900 == 1st arrr======== first count2
+null  https://www.freejobalert.com/opsc-odisha-technical-education-and-training-service-exam-2023/1029182/
+OPSC Odisha Technical Education & Training Service (Group-B) 2023 Exam Result
+https://www.freejobalert.com/opsc-odisha-technical-education-and-training-service-exam-2023/1029182/
+OPSC Technical Education & Training Service (Group-B) Exam Result 2023 - Exam Result Released
+12137 ==========
+12137 == split arrr========
+13834 == 1st arrr======== first count2
+null  https://www.freejobalert.com/jssc-lady-supervisor-2023/1052986/
+JSSC Lady Supervisor 2023 Admit Card
+https://www.freejobalert.com/jssc-lady-supervisor-2023/1052986/
+JSSC Lady Supervisor Admit Card 2024 - Admit Card Download
+9306 ==========
+9306 == split arrr========
+6644 == 1st arrr======== first count2
+null  https://www.freejobalert.com/district-health-committee-koderma-various-vacancy-2024/1110356/
+District Health Committee, Koderma 55 Various Vacancy 2024 Offline Form
+https://www.freejobalert.com/district-health-committee-koderma-various-vacancy-2024/1110356/
+District Health Committee, Koderma Staff Nurse, Pharmacist & Other Posts - Apply for 55 Posts
+10379 ==========
+10379 == split arrr========
+10413 == 1st arrr======== first count2
+null  https://www.freejobalert.com/wcd-jaipur-anganwadi-worker-2024/1110355/
+WCD, Jaipur 71 Anganwadi Worker Offline Form 2024
+https://www.freejobalert.com/wcd-jaipur-anganwadi-worker-2024/1110355/
+WCD, Jaipur Anganwadi Worker Recruitment 2024 - Apply for 71 Posts
+6037 ==========
+6037 == split arrr========
+5959 == 1st arrr======== first count2
+null  https://www.freejobalert.com/gserc-juna-shikshak-2024/1110330/
+GSERC 4000 Juna Shikshak (Old Teacher) 2024 Online Form
+https://www.freejobalert.com/gserc-juna-shikshak-2024/1110330/
+GSERC Juna Shikshak (Old Teacher) Recruitment 2024 - Apply Online for 4000 Posts
+8126 ==========
+8126 == split arrr========
+6414 == 1st arrr======== first count2
+null  https://www.freejobalert.com/drdo-technician-graduate-apprentice-2024/1110327/
+DRDO-ITR, Chandipur 54 Apprentice 2024 Offline Form
+https://www.freejobalert.com/drdo-technician-graduate-apprentice-2024/1110327/
+DRDO-ITR, Chandipur Technician & Graduate Apprentice Recruitment 2024- Apply for 54 Posts
+9888 ==========
+9888 == split arrr========
+7794 == 1st arrr======== first count2
+null  https://www.freejobalert.com/bpsc-70-cce-2024/1110329/
+BPSC 70th CCE 2024 Prelims Exam Date
+https://www.freejobalert.com/bpsc-70-cce-2024/1110329/
+BPSC 70th CCE Exam Date 2024 - Prelims Exam Date Announced
+6334 ==========
+6334 == split arrr========
+6202 == 1st arrr======== first count2
+null  https://www.freejobalert.com/ordance-factory-pune-graduate-and-technician-apprentice-2024/1110321/
+Ordnance Factory Dehu Road 105 Graduate & Technician Apprentice 2024 Offline Form
+https://www.freejobalert.com/ordance-factory-pune-graduate-and-technician-apprentice-2024/1110321/
+Cannot invoke "com.example.sarkariresult.model.GeminiResponse$Candidate$Content.getParts()" because the return value of "com.example.sarkariresult.model.GeminiResponse$Candidate.getContent()" is null
+null  https://www.freejobalert.com/itbp-constable-kitchen-services-2024/1105875/
+ITBP 819 Constable (Kitchen Services) 2024 Online Link Available
+https://www.freejobalert.com/itbp-constable-kitchen-services-2024/1105875/
+ITBP Constable (Kitchen Services) Recruitment 2024 – Apply Online for 819 Posts
+13803 ==========
+13803 == split arrr========
+11171 == 1st arrr======== first count2
+null  https://www.freejobalert.com/tnstc-apprentice-2024/1095868/
+TNSTC Apprentice 2024 Selection List
+https://www.freejobalert.com/tnstc-apprentice-2024/1095868/
+TNSTC Apprentice Result 2024 - Selection List Released
+8910 ==========
+8910 == split arrr========
