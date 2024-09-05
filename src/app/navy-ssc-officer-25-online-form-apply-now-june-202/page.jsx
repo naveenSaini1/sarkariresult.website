@@ -46,7 +46,7 @@ export default function IndianNavyRecruitment() {
         <tbody>
           <tr>
             <td className="border-2 p-2">1</td>
-            <td className="border-2 p-2">General Service {GS(X)/ Hydro Cadre}</td>
+            <td className="border-2 p-2">General Service GS(X)/ Hydro Cadre</td>
             <td className="border-2 p-2">
               56
               <br/>
