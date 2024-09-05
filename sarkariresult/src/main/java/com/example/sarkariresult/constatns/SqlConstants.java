@@ -43,6 +43,9 @@ public class SqlConstants {
     @Value("${GET_THE_TOTAL_NUMBER_OF_SEARCH}")
     public		String			GET_THE_TOTAL_NUMBER_OF_SEARCH;
     
+    @Value("${UPDATE_ALL_THE_ACTIVE_IF_IT_ACTIVE}")
+    public		String			UPDATE_ALL_THE_ACTIVE_IF_IT_ACTIVE;
+    
     // contact
     
     @Value("${INSERT_MESSAGE_INTO_CONTACT}")

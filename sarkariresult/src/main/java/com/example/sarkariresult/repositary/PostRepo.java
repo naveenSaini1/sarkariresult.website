@@ -28,5 +28,7 @@ public interface PostRepo {
 	public List<Post>	searchTheQuery(String query,Integer limit ,Integer offset);
 	
 	public Integer		getTheSearchTotalNumber(String query);
+	
+	public Integer		updateAllTheActive();
 
 }

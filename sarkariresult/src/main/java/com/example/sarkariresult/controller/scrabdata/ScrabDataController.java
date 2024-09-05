@@ -3,6 +3,7 @@ package com.example.sarkariresult.controller.scrabdata;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +28,7 @@ public class ScrabDataController {
 	
 	
 	@GetMapping("/getTheNewUpdatePost")
+	@Scheduled(cron = "0 0 * * * *") 
 	public ResponseEntity<String> getTheNewUpdatePost(){
 		scrabDataService.getTheData();
 		return new ResponseEntity<String>(new String("getTheNewUpdatePost"),HttpStatus.OK);
@@ -34,6 +36,7 @@ public class ScrabDataController {
 	
 	
 	@GetMapping("/getTheActivePost")
+	@Scheduled(cron = "0 30 * * * *") 
 	public ResponseEntity<String> getTheActivePost(){
 		
 		scrabDataService.getTheActivePost();

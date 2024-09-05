@@ -37,7 +37,7 @@ public class PostController {
 //	    public void runTaskWithFixedRate() {
 //	        System.out.println("Task executed with fixed rate - " + System.currentTimeMillis() / 1000);
 //	    }
-	
+//	
 	
 	@GetMapping("/getTheStateList")
 	public ResponseEntity<List<String>> getTheStateList(){

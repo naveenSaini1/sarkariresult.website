@@ -125,6 +125,13 @@ public class PostRepoImple implements PostRepo {
 
 
 
+	@Override
+	public Integer updateAllTheActive() {
+		return jdbcTemplate.update(sqlConstants.UPDATE_ALL_THE_ACTIVE_IF_IT_ACTIVE);
+	}
+
+
+
 	
 
 }

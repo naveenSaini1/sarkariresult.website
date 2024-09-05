@@ -111,6 +111,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 		 String[]		vacancyAndDate	=	{"0","1-1-1901"};
 		 String 		cleanedResponse	=	null;
 		 String[]		response		=	new String[3];
+		 Integer 		count			=  0;
 		try {
 			doc 		 = Jsoup.connect(link).get();
 			String title = doc.title(); 
@@ -127,9 +128,12 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 
 			String  arr	=	commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_POST_,valudString));
 			
-			System.out.println(arr.length()+" == 1st arrr========");
+			
+			count = countTripleBackticks(arr);
+			
+			System.out.println(arr.length()+" == 1st arrr======== first count"+count);
 
-			if(arr.length()>DefaultConstants.CONVERT_THE_STRING_TO_LIMIT) {
+			if(arr.length()>DefaultConstants.CONVERT_THE_STRING_TO_LIMIT && count!=2) {
 				  arr= arr.substring(0,DefaultConstants.CONVERT_THE_STRING_TO_LIMIT);
 	
 					arr	=	commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_VALIDATION,arr));
@@ -137,24 +141,19 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 					System.out.println(arr.length()+" == 2nst arrr========");
 
 			}
-			Integer count = countTripleBackticks(arr);
-			System.out.println(count);
+						
+			arr = handleSingleBacktickResponse(arr);
 			
-			if(count==1) {
-				
-				arr= arr.substring(0,DefaultConstants.CONVERT_THE_STRING_TO_SECOND_LIMIT);
-				
-				arr	=	commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_VALIDATION,arr));
-		
-				System.out.println(arr.length()+" == thirdnst arrr========");
-			}
 			
+			
+			if(arr!=null) {			
 			
 			cleanedResponse	= extractString(arr);
 			
 			
+			
 
-			cleanedResponse = arr
+			cleanedResponse =cleanedResponse
 					.replaceAll("jsx", "")
                       .replaceAll("javascript", "")
 						.replaceAll("use client", "")
@@ -164,21 +163,22 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			
 			
 			
-			if(cleanedResponse.startsWith("html")) {
-				cleanedResponse = arr.replaceAll("html", "")  
-						.replaceAll("```", "")
-						.replaceAll("javascript", "")
-						.replaceAll("use client", "")
-	                      .trim();
+//			if(cleanedResponse.startsWith("html")) {
+//				cleanedResponse = arr.replaceAll("html", "")  
+//						.replaceAll("```", "")
+//						.replaceAll("javascript", "")
+//						.replaceAll("use client", "")
+//	                      .trim();
+//				
 				
+//				cleanedResponse="import React from 'react';const JobPost = () => { return (<>"+cleanedResponse+" </> );};export default JobPost;";
 				
-				cleanedResponse="import React from 'react';const JobPost = () => { return (<>"+cleanedResponse+" </> );};export default JobPost;";
-				
-			}
+//			}
 			cleanedResponse 	=	commonUtilityMethods.cleanJSXCode(cleanedResponse);
 			response[0]=cleanedResponse;
 			response[1]=vacancyAndDate[0];
 			response[2]=vacancyAndDate[1];
+		}
 			
 		} catch (Exception e) {
 			
@@ -192,21 +192,20 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	}
 	
 	
-	public static String extractString(String s) {
-        /**
-         * Extracts the string enclosed within triple backticks (````) from the input string.
-         *
-         * @param s The input string.
-         * @return The extracted string, or an empty string if no match is found.
-         */
-        String pattern = "```(.*?)```";
-        Pattern regex = Pattern.compile(pattern, Pattern.DOTALL);
-        Matcher matcher = regex.matcher(s);
-        if (matcher.find()) {
-            return matcher.group(1);
-        } else {
-            return "";
-        }
+	public static String extractString(String input) {
+		
+		 String regex = "```([\\s\\S]*?)```"; // [\\s\\S] matches any character, including newlines
+	        Pattern pattern = Pattern.compile(regex);
+	        Matcher matcher = pattern.matcher(input);
+
+	        // Check if the pattern is found
+	        if (matcher.find()) {
+	            // Return the content found between the triple backticks
+	            return matcher.group(1).trim();
+	        }
+
+	        // Return null if no match is found
+	        return null;
     }
 	
 	
@@ -228,6 +227,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	    }
 	public void getTheNewUpdateLink() throws InterruptedException {
 		 Document 		doc				=	null;
+		 Integer		count			=	0;
 		 
 		 
 		
@@ -243,6 +243,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			            System.out.println("No tables found within the div with classes 'lsnewuts' and 'nupdate969430'.");
 			            return;
 			        }
+			        
 
 			      
 			            // Extract data from rows (excluding header row)
@@ -263,10 +264,19 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 //								
 			                	String url	=	postRepo.checkIfThePostIsPresent(link);
 			                	System.out.println(url+"  "+link);
-			                	if(url==null)
-			                	saveFileProcess(link,title,0);
+			                	if(url==null) {
+			                		
+				                	saveFileProcess(link,title,0);
+			                	}
+			                	else {
+			                		count++;
+			                	}
 								Thread.sleep(2000);
 			            }
+			                if(count==20) {
+			                	System.out.println("everythings is updated");
+			                	return;
+			               };
 			         }
 
 			} catch (Exception e) {
@@ -365,6 +375,10 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 
 		
 		try {
+			// let's first set all the current active post as 0
+			postRepo.updateAllTheActive();
+			
+			
 			doc = Jsoup.connect("https://www.freejobalert.com/").get();		
 
 			 Element table = doc.select("table.qltpmnu").first();
@@ -396,6 +410,28 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 		
 		
 	}
+	
+	private String handleSingleBacktickResponse(String aiResponse) {
+	    int count = countTripleBackticks(aiResponse);
+
+	    while (count != 2) {
+	        // Cut the response to half its current length
+	        aiResponse = aiResponse.substring(0, aiResponse.length()-2000);
+	        System.out.println("Truncated AI Response Length: " + aiResponse.length());
+
+	        // Send the request again for validation
+	        aiResponse = commonUtilityMethods.getTheAiRequest(String.format(PROMPT_FOR_VALIDATION, aiResponse));
+	        System.out.println("Validated AI Response Length: " + aiResponse.length());
+
+	        // Count occurrences of triple backticks again
+	        count = countTripleBackticks(aiResponse);
+	        System.out.println("Triple Backticks Count after validation: " + count);
+	    }
+
+	    // If we exit the loop with count == 2, return the cleaned response
+	    return (count == 2) ? aiResponse : null;
+	}
+
 
 	@Override
 	public void getTheData() {
