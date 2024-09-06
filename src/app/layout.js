@@ -4,6 +4,7 @@ import NavBar from "@/components/navbar/NavBar";
 import LogoHeaderSection from "@/components/logoHeaderSection/LogoHeaderSection";
 import Footer from "@/components/Footer/Footer";
 import { BASE_URL } from "@/constant/ClientUrl";
+import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 
 
 export const metadata = {
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
         </body>
-
+<GoogleAnalytics/>
     </html>
   );
 }
