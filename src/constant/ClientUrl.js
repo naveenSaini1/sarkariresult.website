@@ -12,4 +12,4 @@ export const clientEndPoints={
         answerKey:"/answerKey"
 }
 
-export const   BASE_URL = "https://sarkariresult.website/"
+export const   BASE_URL = "https://sarkariresult.website"
