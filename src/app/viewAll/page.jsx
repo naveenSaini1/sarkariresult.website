@@ -9,7 +9,7 @@ const SyllabusPage=async ({ searchParams })=>{
     let page=searchParams.page == undefined ? 1 : searchParams.page;
     let totalNumber = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getTheTotalNumberPages, "GET") || 0;
     console.log(totalNumber);
-    let data = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePost + "/" + page, "GET");
+    let data = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePost + "/" + page, "GET")|| [];
    
     return (
         <>
@@ -27,7 +27,7 @@ const SyllabusPage=async ({ searchParams })=>{
                 </div>
               </div>
               <div className="space-y-4">
-                {data.length > 0 && data.map((update, index) => (
+                { data?.length > 0 && data.map((update, index) => (
   
   
                   <CardComponent key={index} title={update.title} category={"search result"} url={update.url} />

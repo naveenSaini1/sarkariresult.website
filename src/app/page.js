@@ -1,4 +1,5 @@
 import ActiveJobs from "@/components/ActiveJobs/ActiveJobs";
+import HomeDetails from "@/components/Footer/HomeDetails";
 import JobSection from "@/components/jobSection/JobSection";
 import NewUpdates from "@/components/newUpdates/NewUpdates";
 import Image from "next/image";
@@ -18,6 +19,7 @@ export default function Home() {
      
 
      </div>
+     <HomeDetails/>
     </main>
   );
 }

@@ -26,6 +26,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
+
+
       <body>
         <WebsiteTitile />
         <NavBar />
@@ -34,6 +36,7 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
       <GoogleAnalytics />
+
     </html>
   );
 }
