@@ -1,6 +1,6 @@
 export default function HomeDetails(){
     return (
-        <div className="max-w-5xl mx-auto p-6 mt-20 shadow-md rounded-lg">
+        <div className="p-6 mt-20 shadow-md rounded-lg">
           {/* Title */}
           <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             Sarkari Result Website: The Ultimate Guide for Securing Indian Government Jobs

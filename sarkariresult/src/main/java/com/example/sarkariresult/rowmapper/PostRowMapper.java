@@ -36,6 +36,23 @@ public class PostRowMapper {
 		
 	}
 	
+	public static class GetThePostsffForSitemap implements ResultSetExtractor<List<Post>>{
+
+		@Override
+		public List<Post> extractData(ResultSet rs) throws SQLException, DataAccessException {
+			List<Post>			response		=	new ArrayList<>();
+			while(rs.next()) {
+				Post		post	= new Post();
+				post.setTitle(rs.getString("newtitile"));
+				post.setUrl(rs.getString("url"));
+				post.setTimestamp(rs.getTimestamp("createtime"));
+				response.add(post);
+			}
+			return response;
+		}
+		
+	}
+	
 	public static class InsertIntoCousePost implements BatchPreparedStatementSetter{
 	   
 		private final List<CoursePost> records;

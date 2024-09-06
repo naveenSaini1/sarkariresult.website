@@ -1,5 +1,7 @@
 package com.example.sarkariresult.model;
 
+import java.sql.Timestamp;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,5 +17,6 @@ public class Post {
 	private Integer postId;
 	private String url;
 	private String title;
+	private Timestamp timestamp;
 
 }

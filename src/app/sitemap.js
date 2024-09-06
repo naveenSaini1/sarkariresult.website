@@ -4,11 +4,12 @@ import fetchApi from "@/util/fetch";
 
 export default async function SiteMap (){
     const data = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePostForSiteMap, "GET") || [];
+   console.log(data)
     const allPost=data?.map((el)=>{
         return (
             {
                 url:`${BASE_URL}${el?.url}`,
-                lastModified:new Date()
+                lastModified:el.timestamp
                 
             }
         )

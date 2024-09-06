@@ -18,15 +18,14 @@ const NavBar = () => {
     <nav className="w-full py-3 bg-secondaryBgColor flex justify-center items-center shadow-md flex-col">
       <ul className="flex flex-wrap justify-center items-center gap-4 md:gap-6 xl:gap-8 font-semibold text-primaryTxtColor text-sm md:text-base xl:text-lg">
         {navItem.map((item, index) => (
-          <li
+          <Link href={item.href}
             key={index}
             className={`${pathName === item.href ? 'bg-white text-black shadow-lg' : ''
-              } rounded-full hover:bg-white hover:text-black transition-all duration-300 py-2 px-4 cursor-pointer`}
+              } rounded-full hover:bg-white hover:text-black transition-all duration-300 py-2 px-4 cursor-pointer "hover:no-underline"`}
           >
-            <Link href={item.href} className="hover:no-underline">
+            
               {item.label}
             </Link>
-          </li>
         ))}
       </ul>
      

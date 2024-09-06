@@ -19,7 +19,12 @@ export default function Home() {
      
 
      </div>
+     <div className="w-[95%] m-auto">
+
      <HomeDetails/>
+
+     </div>
+
     </main>
   );
 }

@@ -1,133 +1,141 @@
+import { clientEndPoints } from '@/constant/ClientUrl';
+import Link from 'next/link';
 import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
-      <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-      <p className="text-lg mb-6">
-        At SarkariResult.website, we value and respect the privacy of our users. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website, in compliance with applicable data protection laws, including the General Data Protection Regulation (GDPR) and Google's AdSense program policies.
+    <div className="w-[95%] mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
+    {/* Title */}
+    <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center">
+      Privacy Policy
+    </h1>
+    
+    {/* Introduction */}
+    <p className="text-gray-700 leading-relaxed mb-6">
+      At <span className="font-semibold">SarkariResult.website</span>, we value and respect the privacy of our users. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website, in compliance with applicable data protection laws, including the General Data Protection Regulation (GDPR) and Google's AdSense program policies.
+    </p>
+    <p className="text-gray-700 leading-relaxed mb-6">
+      By using <span className="font-semibold">SarkariResult.website</span>, you agree to the collection and use of information in accordance with this policy.
+    </p>
+
+    {/* Section: Information We Collect */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">1. Information We Collect</h2>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        When you visit <span className="font-semibold">SarkariResult.website</span>, we may collect two types of information:
       </p>
-      <h2 className="text-2xl font-bold mb-4">1. Information We Collect</h2>
-      <p className="text-lg mb-6">
-        When you visit SarkariResult.website, we may collect two types of information:
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">Personal Information</h3>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        We collect personal information that you voluntarily provide to us when you:
       </p>
-      <ul className="list-disc pl-4 mb-6">
-        <li className="mb-2">
-          <strong>Personal Information</strong>
-          <ul className="list-disc pl-4 mb-2">
-            <li>We collect personal information that you voluntarily provide to us when you:</li>
-            <li>Subscribe to our newsletter</li>
-            <li>Fill out a form on the website</li>
-            <li>Contact us via email or our contact form</li>
-            <li>Comment on blog posts or content</li>
-            <li>The types of personal information may include your name, email address, and any other information you choose to provide.</li>
-          </ul>
+      <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+        <li>Subscribe to our newsletter</li>
+        <li>Fill out a form on the website</li>
+        <li>Contact us via email or our contact form</li>
+        <li>Comment on blog posts or content</li>
+      </ul>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        The types of personal information may include your name, email address, and any other information you choose to provide.
+      </p>
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">Non-Personal Information</h3>
+      <p className="text-gray-700 leading-relaxed">
+        We also collect non-personal information automatically when you interact with our website, such as:
+      </p>
+      <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+        <li>
+          <span className="font-semibold">Cookies and tracking technologies:</span> We may use cookies, web beacons, and similar technologies to enhance user experience, analyze site traffic, and for targeted advertising.
         </li>
-        <li className="mb-2">
-          <strong>Non-Personal Information</strong>
-          <ul className="list-disc pl-4 mb-2">
-            <li>We also collect non-personal information automatically when you interact with our website, such as:</li>
-            <li>Cookies and tracking technologies: We may use cookies, web beacons, and similar technologies to enhance user experience, analyze site traffic, and for targeted advertising. Cookies are small text files that are placed on your device to collect information about your browsing activity. You can manage or disable cookies through your browser settings.</li>
-            <li>Log data: This includes your browser type, device information, IP address, pages visited, time spent on pages, and other diagnostic data.</li>
-          </ul>
+        <li>
+          <span className="font-semibold">Log data:</span> This includes your browser type, device information, IP address, pages visited, time spent on pages, and other diagnostic data.
         </li>
       </ul>
-      <h2 className="text-2xl font-bold mb-4">2. How We Use Your Information</h2>
-      <p className="text-lg mb-6">
+    </section>
+
+    {/* Section: How We Use Your Information */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">2. How We Use Your Information</h2>
+      <p className="text-gray-700 leading-relaxed mb-4">
         We use the information we collect for the following purposes:
       </p>
-      <ul className="list-disc pl-4 mb-6">
-        <li className="mb-2">
-          To provide, operate, and maintain our website: We use your information to ensure that our website functions properly and delivers the content you expect.
-        </li>
-        <li className="mb-2">
-          To improve our website: We may analyze user behavior to improve the design and functionality of the website.
-        </li>
-        <li className="mb-2">
-          To send periodic emails: If you subscribe to our newsletter, we will use your email address to send updates, job alerts, and other relevant content. You can unsubscribe from our emails at any time.
-        </li>
-        <li className="mb-2">
-          To personalize user experience: We may use the data to offer tailored content, job recommendations, and advertisements based on your interests and preferences.
-        </li>
-        <li className="mb-2">
-          For advertising and analytics: We work with third-party service providers, such as Google AdSense, to display advertisements and measure traffic on our website. These partners may use cookies and similar technologies to serve relevant ads and analyze website performance.
-        </li>
+      <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <li>To provide, operate, and maintain our website</li>
+        <li>To improve our website</li>
+        <li>To send periodic emails</li>
+        <li>To personalize user experience</li>
+        <li>For advertising and analytics</li>
       </ul>
-      <h2 className="text-2xl font-bold mb-4">3. Google AdSense & Cookies</h2>
-      <p className="text-lg mb-6">
-        SarkariResult.website uses Google AdSense, a third-party service, to display ads on our website. Google AdSense uses cookies to serve ads based on your prior visits to our website or other websites. The data collected from these cookies helps Google and its partners serve ads that are more relevant to you.
-      </p>
-      <p className="text-lg mb-6">
-        Google uses the DoubleClick DART cookie, which enables it and its partners to serve ads to users based on their visit to this website and/or other sites on the Internet. You can opt out of the use of the DART cookie by visiting the Google Ads Settings.
-      </p>
-      <p className="text-lg mb-6">
-        Third-party vendors, including Google, may use cookies to serve ads based on your visits to our website. Users can manage preferences and opt out of personalized advertising by visiting the Google Ad Settings or by opting out of third-party cookies through a resource like Network Advertising Initiative.
-      </p>
-      <h2 className="text-2xl font-bold mb-4">4. Data Protection & Security</h2>
-      <p className="text-lg mb-6">
-        We take the security of your personal information seriously. SarkariResult.website employs industry-standard practices and tools to protect your data from unauthorized access, alteration, disclosure, or destruction. This includes SSL encryption and secure server protocols.
-      </p>
-      <p className="text-lg mb-6">
-        However, please note that no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
-      </p>
-      <h2 className="text-2xl font-bold mb-4">5. Sharing Your Information</h2>
-      <p className="text-lg mb-6">
-        We do not sell, trade, or rent your personal information to third parties. However, we may share information with third-party service providers who assist us in operating our website, conducting business, or serving you, as long as these parties agree to keep your information confidential.
-      </p>
-      <p className="text-lg mb-6">
-        We may also share your information when required to comply with legal obligations, enforce our site's policies, or protect our rights, safety, and the rights of others.
-      </p>
-      <h2 className="text-2xl font-bold mb-4">6. Third-Party Links and Services</h2>
-      <p className="text-lg mb-6">
-        Our website may contain links to third-party websites, services, or offers. Please note that we do not control these third-party sites, and they operate independently of our privacy policy. We encourage you to review the privacy policies of these third-party sites before providing any personal information.
-      </p>
-      <h2 className="text-2xl font-bold mb-4">7. Children's Privacy</h2>
-      <p className="text-lg mb-6">
-        SarkariResult.website is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us, and we will take steps to remove that information from our records.
-      </p>
-      <h2 className="text-2xl font-bold mb-4">8. Your Data Rights</h2>
-      <p className="text-lg mb-6">
-        If you are located in the European Economic Area (EEA), you have certain rights under data protection laws, including the right to:
-      </p>
-      <ul className="list-disc pl-4 mb-6">
-        <li className="mb-2">
-          Access the personal data we hold about you
-        </li>
-        <li className="mb-2">
-          Correct or update any inaccurate information
-        </li>
-        <li className="mb-2">
-          Request the deletion of your personal data
-        </li>
-        <li className="mb-2">
-          Restrict or object to the processing of your data
-        </li>
-        <li className="mb-2">
-          Withdraw your consent to the use of your personal data at any time
-        </li>
-        <li className="mb-2">
-          Request the transfer of your data to another service provider
-        </li>
-      </ul>
-      <p className="text-lg mb-6">
-        To exercise any of these rights, please contact us at <a href="mailto:info@sarkariresult.website" className="text-blue-600 hover:text-blue-800">info@sarkariresult.website</a>. We will respond to your request in compliance with applicable laws.
-      </p>
-      <h2 className="text-2xl font-bold mb-4">9. Changes to Our Privacy Policy</h2>
-      <p className="text-lg mb-6">
-        SarkariResult.website reserves the right to update or change this Privacy Policy at any time. Any changes we make will be posted on this page, and we will notify you by updating the "Last Updated" date at the bottom of this policy. We encourage you to review this page periodically to stay informed about how we protect your information.
-      </p>
-      <p className="text-lg mb-6">
-        By continuing to use our website after any changes, you acknowledge and agree to the updated Privacy Policy.
-      </p>
-      <p className="text-lg mb-6">
-        If you have any questions or concerns about this Privacy Policy, please feel free to contact us at <a href="mailto:info@sarkariresult.website" className="text-blue-600 hover:text-blue-800">info@sarkariresult.website</a>. We will respond to your inquiry in a timely manner.
-      </p>
+    </section>
 
-      <p className="text-lg mb-6">
-        Last Updated: {new Date().toUTCString()}
+    {/* Section: Google AdSense & Cookies */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">3. Google AdSense & Cookies</h2>
+      <p className="text-gray-700 leading-relaxed">
+        <span className="font-semibold">SarkariResult.website</span> uses Google AdSense, a third-party service, to display ads on our website. Google AdSense uses cookies to serve ads based on your prior visits to our website or other websites. You can opt out of the use of the DART cookie by visiting the Google Ads Settings.
       </p>
+    </section>
 
-    </div>
+    {/* Section: Data Protection & Security */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">4. Data Protection & Security</h2>
+      <p className="text-gray-700 leading-relaxed">
+        We take the security of your personal information seriously and use industry-standard practices, including SSL encryption and secure server protocols. However, no method of transmission over the Internet or electronic storage is 100% secure.
+      </p>
+    </section>
+
+    {/* Section: Sharing Your Information */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">5. Sharing Your Information</h2>
+      <p className="text-gray-700 leading-relaxed">
+        We do not sell, trade, or rent your personal information to third parties. We may share information with third-party service providers who assist us in operating our website or serving you, provided they agree to keep your information confidential.
+      </p>
+    </section>
+
+    {/* Section: Third-Party Links and Services */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">6. Third-Party Links and Services</h2>
+      <p className="text-gray-700 leading-relaxed">
+        Our website may contain links to third-party websites, services, or offers. These sites operate independently of our privacy policy, and we encourage you to review their privacy policies.
+      </p>
+    </section>
+
+    {/* Section: Children's Privacy */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">7. Children's Privacy</h2>
+      <p className="text-gray-700 leading-relaxed">
+        <span className="font-semibold">SarkariResult.website</span> is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13 years of age.
+      </p>
+    </section>
+
+    {/* Section: Your Data Rights */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">8. Your Data Rights</h2>
+      <p className="text-gray-700 leading-relaxed">
+        If you are located in the European Economic Area (EEA), you have certain rights under data protection laws, including the right to access, correct, delete, or restrict the processing of your data.
+      </p>
+    </section>
+
+    {/* Section: Changes to Our Privacy Policy */}
+    <section className="mb-8">
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">9. Changes to Our Privacy Policy</h2>
+      <p className="text-gray-700 leading-relaxed">
+        <span className="font-semibold">SarkariResult.website</span> reserves the right to update or change this Privacy Policy at any time. We encourage you to review this page periodically to stay informed about how we protect your information.
+      </p>
+    </section>
+
+    {/* Section: Contact Us */}
+    <section>
+      <h2 className="text-2xl font-semibold text-secondaryTxtColor mb-4">10. Contact Us</h2>
+      <p className="text-gray-700 leading-relaxed">
+        If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+      </p>
+      <p className="text-gray-700 mb-4">
+        <span className="font-semibold">Email Us</span> <Link href={clientEndPoints.contact} className="text-blue-500">Message Us</Link>
+      </p>
+      <p className="text-gray-700">
+        <span className="font-semibold">Phone:</span> +91-XXXXXXXXXX
+      </p>
+    </section>
+  </div>
   );
 };
 

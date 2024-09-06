@@ -135,7 +135,7 @@ public class PostRepoImple implements PostRepo {
 
 	@Override
 	public List<Post> getTheBulkPostSitemMap() {
-		return jdbcTemplate.query(sqlConstants.GET_THE_ALL_POST_FOR_SITEMAP,new PostRowMapper.GetThePosts());
+		return jdbcTemplate.query(sqlConstants.GET_THE_ALL_POST_FOR_SITEMAP,new PostRowMapper.GetThePostsffForSitemap());
 	}
 
 
