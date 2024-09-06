@@ -8,7 +8,7 @@ export default function EachPageData({courseName,searchParams,totalNumber,descri
     return (
         <>
 
-            <div classNameName="w-[100%] sm:w-[90%] md:w-[70%]">
+            <div className="w-[100%] sm:w-[90%] md:w-[70%]">
                 <div>
                 <PostCardComponent title={courseName} category={"Hall Ticket"} searchParams={searchParams.page == undefined ? { page: 1 } : searchParams} courseName={courseName} totalPage={totalNumber} />
                 </div>
@@ -22,7 +22,7 @@ export default function EachPageData({courseName,searchParams,totalNumber,descri
                     <NewUpdates />
                 </div>
 
-                <div classNameName="gap-6 m-auto  grid grid-cols-[repeat(auto-fit,minmax(19rem,1fr))]">
+                <div className="gap-6 m-auto  grid grid-cols-[repeat(auto-fit,minmax(19rem,1fr))]">
                     <JobSection title={"Admit Card"} course={"admit"} />
                     <JobSection title={"Syllabus"} course={"syllabus"} />
                     <JobSection title={"Answer key"} course={"answerKey"} />
@@ -31,9 +31,9 @@ export default function EachPageData({courseName,searchParams,totalNumber,descri
 
             </div>
 
-            <div classNameName="hidden overflow-hidden flex-col justify-start items-center lg:w-[40%] w-[25%] md:w-[30%] sm:w-[20%] sm:block "
+            <div className="hidden overflow-hidden flex-col justify-start items-center lg:w-[40%] w-[25%] md:w-[30%] sm:w-[20%] sm:block "
             >
-                <div classNameName="">
+                <div className="">
                 <ActiveJobs />
                 </div>
                 <div>
