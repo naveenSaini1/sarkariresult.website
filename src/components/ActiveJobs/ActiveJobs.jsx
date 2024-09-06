@@ -6,7 +6,6 @@ import { API_HOST_ADDRESS, endPoints, PUBLIC_PREFIX } from "@/constant/ServerUrl
 
 const ActiveJobs= async()=>{
     let data=await fetchApi(API_HOST_ADDRESS+PUBLIC_PREFIX+endPoints.getTheBulkPost,"GET") || [];
-    console.log(data);
     return (
         <div className="mt-10 w-[80%] m-auto">
         {/* <h3 className="mb-4 text-3xl bg-secondaryBgColor text-primaryTxtColor px-2  rounded-xl inline-block">Active Jobs</h3> */}

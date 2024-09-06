@@ -12,14 +12,14 @@ import com.example.sarkariresult.model.Post;
 public interface PostRepo {
 	
 	public Integer insertIntoPost(String href,String OriginolTitile,String url,String newTitile,Integer totalPost,Integer active,String expiaryDate);
-	public List<Post>		getTheTopPost();
+	public List<Post>		getTheTopPost(Integer page,Integer offset);
 	public Integer insertIntoCoursePostId(List<CoursePost> corusePostRecords);
 	
 	public List<Post>		getThePostByCourseId(Integer coruseId,Integer limit,Integer offset);
 	
 	public Integer			updateThePostForBulk(String oUrl);
 	
-	public List<Post>		getTheBulkPost();
+	public List<Post>		getTheBulkPostForActive();
 	
 	public Integer		getTheTotalNumber(Integer categoryId);
 	
@@ -30,5 +30,11 @@ public interface PostRepo {
 	public Integer		getTheSearchTotalNumber(String query);
 	
 	public Integer		updateAllTheActive();
+	
+	public List<Post>		getTheBulkPostSitemMap();
+	
+	public Integer		getTheTotalNumberPage();
+
+
 
 }

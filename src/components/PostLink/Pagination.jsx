@@ -6,11 +6,10 @@ export default function Pagination({ totalPage = 10, currentPage=1 ,page="admit-
     let arr = Array.from({ length: totalPage }, (_, index) => index);
     let slide = 0;
     let pageToshow = 5;
-    console.log(arr)
     return (
         <>
             <div className="container mx-auto px-4 mt-8">
-                <nav className="flex flex-row flex-nowrap justify-between md:justify-center items-center" aria-label="Pagination">
+                <nav className="flex flex-row flex-wrap md:flex-nowrap justify-start md:justify-center items-center" aria-label="Pagination">
                     <Link className="flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300"
                         href={currentPage > 1
                             ? page + `?page=${Number(currentPage) - 1}`
@@ -33,7 +32,7 @@ export default function Pagination({ totalPage = 10, currentPage=1 ,page="admit-
 
                         if (slide != 0 && slide <= pageToshow) {
                             return (
-                                <Link key={index} href={page + "?page=" + (label)} className={`hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 ${(currentPage != label) ? 'bg-white text-black' : 'bg-black text-white'} hover:border-gray-300`} title={`page ${index + 1}`}>
+                                <Link key={index} href={page + "?page=" + (label)} className={`md:flex w-10 h-10 mx-1 justify-center text-center items-center rounded-full border border-gray-200 ${(currentPage != label) ? 'bg-white text-black' : 'bg-black text-white'} hover:border-gray-300`} title={`page ${index + 1}`}>
                                     {index + 1}
                                 </Link>
                             )

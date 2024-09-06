@@ -29,7 +29,7 @@ public class PostServiceImpl implements PostService{
 		
 		
 		
-		return postRepo.getTheTopPost();
+		return postRepo.getTheTopPost(defualMessageLimit,offset);
 	}
 
 	@Override
@@ -57,8 +57,8 @@ public class PostServiceImpl implements PostService{
 	}
 
 	@Override
-	public List<Post> getTheBulkPost() {
-		return postRepo.getTheBulkPost();
+	public List<Post> getTheBulkPostForActive() {
+		return postRepo.getTheBulkPostForActive();
 	}
 
 	@Override
@@ -92,6 +92,19 @@ public class PostServiceImpl implements PostService{
 	public Integer getTheSearchPaginationTotoal(String query) throws Exception {
 		Integer 	totalPage			=	0;
 		totalPage	=	postRepo.getTheSearchTotalNumber(query);
+		totalPage 	=(int)Math.ceil((double)totalPage/DefaultConstants.DEFAULT_LIMIT_FOR_POST);
+		return totalPage;
+	}
+
+	@Override
+	public List<Post> getTheBulkPostForSiteMap() {
+		return postRepo.getTheBulkPostSitemMap();
+	}
+
+	@Override
+	public Integer getThePaginationTotoalPages() throws Exception {
+		Integer 	totalPage			=	0;
+		totalPage	=	postRepo.getTheTotalNumberPage();
 		totalPage 	=(int)Math.ceil((double)totalPage/DefaultConstants.DEFAULT_LIMIT_FOR_POST);
 		return totalPage;
 	}

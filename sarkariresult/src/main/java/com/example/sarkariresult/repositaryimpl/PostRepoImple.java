@@ -44,10 +44,11 @@ public class PostRepoImple implements PostRepo {
 
 
 	@Override
-	public List<Post> getTheTopPost() {
+	public List<Post> getTheTopPost(Integer page,Integer offset) {
+		Object[]		data= {page,offset};
 		
 		
-		return jdbcTemplate.query(sqlConstants.GET_THE_LATEST_POST, new PostRowMapper.GetThePosts());
+		return jdbcTemplate.query(sqlConstants.GET_THE_LATEST_POST, new PostRowMapper.GetThePosts(),data);
 	}
 
 
@@ -86,7 +87,7 @@ public class PostRepoImple implements PostRepo {
 
 
 	@Override
-	public List<Post> getTheBulkPost() {
+	public List<Post> getTheBulkPostForActive() {
 		// TODO Auto-generated method stub
 		return jdbcTemplate.query(sqlConstants.GET_THE_BULK_POST,new PostRowMapper.GetThePosts());
 	}
@@ -128,6 +129,20 @@ public class PostRepoImple implements PostRepo {
 	@Override
 	public Integer updateAllTheActive() {
 		return jdbcTemplate.update(sqlConstants.UPDATE_ALL_THE_ACTIVE_IF_IT_ACTIVE);
+	}
+
+
+
+	@Override
+	public List<Post> getTheBulkPostSitemMap() {
+		return jdbcTemplate.query(sqlConstants.GET_THE_ALL_POST_FOR_SITEMAP,new PostRowMapper.GetThePosts());
+	}
+
+
+
+	@Override
+	public Integer getTheTotalNumberPage() {
+		return jdbcTemplate.query(sqlConstants.GET_TOTOAL_PAGES,new PostRowMapper.GetThePaginationTotoalPost());
 	}
 
 

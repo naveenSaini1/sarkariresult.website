@@ -18,13 +18,20 @@ public interface PostService {
 	
 	public List<Post> getThePostByCourse(String courseName,Integer page) throws Exception;
 	
-	public List<Post> getTheBulkPost();
+	public List<Post> getTheBulkPostForActive();
 	
 	public Integer	getThePaginationTotoal(String categoryName) throws Exception;
+	
+	public Integer	getThePaginationTotoalPages() throws Exception;
+
+	
 	
 	public List<Post> searchThePost(String query,Integer page) throws Exception;
 	
 	public Integer	getTheSearchPaginationTotoal(String query) throws Exception;
+	
+	public List<Post> getTheBulkPostForSiteMap();
+
 
 
 

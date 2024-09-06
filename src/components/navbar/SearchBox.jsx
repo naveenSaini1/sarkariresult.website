@@ -25,8 +25,8 @@ export default function SearchBox(){
   
     return (
         <>
-         <div className=" w-[50%] flex items-center justify-center mt-5 ">
-        <div className="relative w-[50%]">
+         <div className=" w-[90%] md:w-[50%] flex items-center justify-center mt-5 ">
+        <div className="relative w-[100%]">
           <input
           onKeyDown={hanldeSubmitSearchQuery}
           ref={searchRef}
@@ -39,7 +39,7 @@ export default function SearchBox(){
             className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500 hover:text-blue-500 bg-gray-200 pl-4"
           >
            
-           <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11 2a9 9 0 0 1 7.032 14.617l3.675 3.676a1 1 0 0 1-1.32 1.497l-.094-.083-3.676-3.675A9 9 0 1 1 11 2m0 2a7 7 0 1 0 0 14 7 7 0 0 0 0-14"/></svg>
+           <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M11 2a9 9 0 0 1 7.032 14.617l3.675 3.676a1 1 0 0 1-1.32 1.497l-.094-.083-3.676-3.675A9 9 0 1 1 11 2m0 2a7 7 0 1 0 0 14 7 7 0 0 0 0-14"/></svg>
           </button>
         </div>
       </div>

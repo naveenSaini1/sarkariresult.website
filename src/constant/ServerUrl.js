@@ -10,7 +10,9 @@ export const    endPoints   =   {
     searchThePost:"/searchThePost",
     searchThePostTotalNumberPagination:"/searchThePostTotalNumberPagination",
     makeNewContact:"/makeNewContact",
-    submitContactForm:"/submitContactForm"
+    submitContactForm:"/submitContactForm",
+    getTheTotalNumberPages:"/getTheTotalNumberPages",
+    getThePostForSiteMap:"/getThePostForSiteMap"
 }
 
 export  const   PUBLIC_PREFIX   =   "/public"

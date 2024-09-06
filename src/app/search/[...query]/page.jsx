@@ -6,13 +6,12 @@ import { API_HOST_ADDRESS, endPoints, PUBLIC_PREFIX } from "@/constant/ServerUrl
 import fetchApi from "@/util/fetch";
 
 export default async function SearchPage({ searchParams, params }) {
- let query=params.query ? decodeURIComponent(params.query[0]) : "";
+  let query = params.query ? decodeURIComponent(params.query[0]) : "";
   let form = new FormData();
-  form.append("query",query )
+  form.append("query", query)
   let totalNumber = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.searchThePostTotalNumberPagination, "POST", null, form) || 0;
   form.append("page", searchParams.page == undefined ? 1 : searchParams.page)
   let data = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.searchThePost, "POST", null, form) || [];
-  console.log(totalNumber, searchParams.page, decodeURIComponent(params.query[0]));
   return (
     <>
       <div className=" w-[100%] px-4 sm:px-6 lg:px-8">

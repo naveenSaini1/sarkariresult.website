@@ -1,7 +1,9 @@
+import AboutUs from "@/components/AboutUs/AboutUs";
+
 const AboutPage=()=>{
     return(
         <>
-        <h1>AboutPage Page</h1>
+       <AboutUs/>
 
         </>
     )

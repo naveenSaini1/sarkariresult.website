@@ -23,7 +23,7 @@ const JobSection= async ({title,course})=>{
 
         </div>
         <div className="flex justify-center w-full mt-5 text-xl font-bold">
-            <h4 className="text-center w-full text-red-600 underline "><Link  className="block text-center" href={""}>View More</Link></h4>
+            <h4 className="text-center w-full text-red-600 underline "><Link  className="block text-center" href={"/"+course+"?page=1"}>View More</Link></h4>
         </div>
         </div>
     )

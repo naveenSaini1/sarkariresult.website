@@ -56,8 +56,14 @@ public class PostController {
 		return new ResponseEntity<List<Post>>(postService.getThePostByCourse(courseName,page),HttpStatus.OK);
 	}
 	@GetMapping("/getTheBulkPost")
-	public ResponseEntity<List<Post>> getTheBulkPost() throws Exception{
-		return new ResponseEntity<List<Post>>(postService.getTheBulkPost(),HttpStatus.OK);
+	public ResponseEntity<List<Post>> getTheBulkPostActive() throws Exception{
+		return new ResponseEntity<List<Post>>(postService.getTheBulkPostForActive(),HttpStatus.OK);
+	}
+	
+	
+	@GetMapping("/getThePostForSiteMap")
+	public ResponseEntity<List<Post>> getThePostForSiteMap() throws Exception{
+		return new ResponseEntity<List<Post>>(postService.getTheBulkPostForSiteMap(),HttpStatus.OK);
 	}
 	
 	
@@ -68,6 +74,11 @@ public class PostController {
 		return new ResponseEntity<Integer>(postService.getThePaginationTotoal(categoryName),HttpStatus.OK);
 	}
 	
+	@GetMapping("/getTheTotalNumberPages")
+	public ResponseEntity<Integer> getTheTotalNumberPages() throws Exception{
+		
+		return new ResponseEntity<Integer>(postService.getThePaginationTotoalPages(),HttpStatus.OK);
+	}
 	@PostMapping("/searchThePost")
 	public ResponseEntity<List<Post>> 	searchThePost(@RequestParam("query") String query,@RequestParam("page") Integer page) throws Exception{
 		

@@ -46,6 +46,12 @@ public class SqlConstants {
     @Value("${UPDATE_ALL_THE_ACTIVE_IF_IT_ACTIVE}")
     public		String			UPDATE_ALL_THE_ACTIVE_IF_IT_ACTIVE;
     
+    @Value("${GET_THE_ALL_POST_FOR_SITEMAP}")
+    public		String			GET_THE_ALL_POST_FOR_SITEMAP;
+    
+    @Value("${GET_TOTOAL_PAGES}")
+    public		String			GET_TOTOAL_PAGES;
+    
     // contact
     
     @Value("${INSERT_MESSAGE_INTO_CONTACT}")

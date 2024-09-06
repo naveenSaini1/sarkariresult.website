@@ -28,7 +28,7 @@ public class ScrabDataController {
 	
 	
 	@GetMapping("/getTheNewUpdatePost")
-	@Scheduled(cron = "0 0 * * * *") 
+//	@Scheduled(cron = "0 0 * * * *") 
 	public ResponseEntity<String> getTheNewUpdatePost(){
 		scrabDataService.getTheData();
 		return new ResponseEntity<String>(new String("getTheNewUpdatePost"),HttpStatus.OK);
@@ -36,7 +36,7 @@ public class ScrabDataController {
 	
 	
 	@GetMapping("/getTheActivePost")
-	@Scheduled(cron = "0 30 * * * *") 
+//	@Scheduled(cron = "0 30 * * * *") 
 	public ResponseEntity<String> getTheActivePost(){
 		
 		scrabDataService.getTheActivePost();

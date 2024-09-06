@@ -6,5 +6,10 @@ export const clientEndPoints={
         onlineForm:"/online-form",
         result:"/result",
         syllabus:"/syllabus",  
-        search:"/search"    
+        search:"/search" ,  
+        viewAll:"/viewAll",
+        privacy:"/privacy" ,
+        answerKey:"/answerKey"
 }
+
+export const   BASE_URL = "https://sarkariresult.website/"

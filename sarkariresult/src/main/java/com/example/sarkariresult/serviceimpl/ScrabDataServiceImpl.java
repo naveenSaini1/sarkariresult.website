@@ -280,7 +280,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			         }
 
 			} catch (Exception e) {
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			}  
 
 			
@@ -320,12 +320,14 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			 insertedId		=	postRepo.insertIntoPost(href,originalTitle, url, newTitle,totalPost,active,expiaryDate);
 			 if(insertedId!=0) {
 				 makeFile(url, content[0]);
+				 makeLayOutFile(newTitle, url);
 				 if(category.size()>0)
 					 InsertIntoCoursePost(category, originalTitle);
 			 }
 			 
 			}
 			catch(Exception e) {
+//				e.printStackTrace();
 				System.out.println(e.getMessage());
 			}
 		
@@ -350,6 +352,28 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
         	System.out.println(e.getMessage());
         }
     
+		
+	}
+	
+	public void makeLayOutFile(String title,String fileName) {
+		String fullPath=folderPath+File.separator+fileName;
+		File dir = new File(fullPath);
+		if(!dir.exists()) {
+			return;
+		}
+     
+
+        try {
+            File file1 = new File(fullPath+File.separator+"layout.jsx");
+            FileWriter fileWriter = new FileWriter(file1);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write("import { BASE_URL } from \"@/constant/ClientUrl\";export const metadata = {metadataBase:new URL(BASE_URL + \"/ "+fileName+"\"),keywords:[\"sarkariresult\",\"sarkariresult website\",\"sarkari result\",\"goverment jobs\",\"free job alert\",\"haryanan Jobs\"], title: { default:\" "+title.trim()+"| sarkariresult.website"+" \",      template: `"+"%s | sarkarresult.website"+"`   },openGraph: {description: 'apply for online goverment jobs find the details of the goverment jobs', openGraphImage:{image:[\"/public/logo.png\"]} }};export default function admitCardLayout({ children }) { return (<><section className=\"text-center overflow-hidden\">{children}</section> </>   );}");
+            bufferedWriter.close();
+        } catch (IOException e) {
+        	System.out.println(e.getMessage());
+
+
+        }
 		
 	}
 	
@@ -413,10 +437,11 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	
 	private String handleSingleBacktickResponse(String aiResponse) {
 	    int count = countTripleBackticks(aiResponse);
+	    int defaultMinux=2000;
 
 	    while (count != 2) {
 	        // Cut the response to half its current length
-	        aiResponse = aiResponse.substring(0, aiResponse.length()-2000);
+	        aiResponse = aiResponse.substring(0, aiResponse.length()-defaultMinux);
 	        System.out.println("Truncated AI Response Length: " + aiResponse.length());
 
 	        // Send the request again for validation
@@ -426,6 +451,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	        // Count occurrences of triple backticks again
 	        count = countTripleBackticks(aiResponse);
 	        System.out.println("Triple Backticks Count after validation: " + count);
+	        defaultMinux+=2000;
 	    }
 
 	    // If we exit the loop with count == 2, return the cleaned response
@@ -439,8 +465,8 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 		try {
 			getTheNewUpdateLink();
 		} catch (InterruptedException e) {
+			System.out.println(e.getMessage());
 
-			e.printStackTrace();
 		}		
 		
 	}
