@@ -8,7 +8,7 @@ export default function Robots(){
                 allow:"/",
                 disallow:[]
             },
-            sitemap:`${BASE_URL}sitemap.xml`
+            sitemap:`${BASE_URL}/sitemap.xml`
         }
     )
 }
