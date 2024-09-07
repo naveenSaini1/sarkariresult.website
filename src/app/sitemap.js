@@ -8,7 +8,7 @@ export default async function SiteMap (){
     const allPost=data?.map((el)=>{
         return (
             {
-                url:`${BASE_URL}${el?.url}`,
+                url:`${BASE_URL}/${el?.url}`,
                 lastModified:el.timestamp
                 
             }
