@@ -11,4 +11,4 @@ git add .
 git commit -m "init"
 
 # Push changes to GitHub
-git push origin main
+git push origin master
