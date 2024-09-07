@@ -8,7 +8,7 @@ cd /home/naveen/Desktop/mysarkarijobs
 git add .
 
 # Commit changes
-git commit -m "Your commit message"
+git commit -m"init"
 
 # Push changes to GitHub
 git push origin main
