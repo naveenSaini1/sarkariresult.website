@@ -1,6 +1,9 @@
 import { BASE_URL, clientEndPoints } from "@/constant/ClientUrl";
 
 
+
+
+
 export const metadata = {
   metadataBase:new URL(BASE_URL+clientEndPoints.about),
   keywords:["sarkariresult about ","sarkariresult website about "," about sarkari result"," about goverment jobs"," about free job alert","haryanan Jobs"],
