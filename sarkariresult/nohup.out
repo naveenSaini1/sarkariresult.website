@@ -25386,3 +25386,46 @@ syllabus   1
 2024-09-07T05:57:31.378Z  INFO 762754 --- [sarkariresult] [nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2024-09-07T05:57:32.063Z  INFO 762754 --- [sarkariresult] [nio-8081-exec-5] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f5e4a7f
 2024-09-07T05:57:32.066Z  INFO 762754 --- [sarkariresult] [nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.9)
+
+2024-09-08T17:26:02.121Z  INFO 38311 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Starting SarkariresultApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 38311 (/projects/sarkariresult.website/sarkariresult/sarkariresult-0.0.1-SNAPSHOT.jar started by root in /projects/sarkariresult.website/sarkariresult)
+2024-09-08T17:26:02.126Z  INFO 38311 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : The following 1 profile is active: "prod"
+2024-09-08T17:26:04.563Z  INFO 38311 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-09-08T17:26:04.587Z  INFO 38311 --- [sarkariresult] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-08T17:26:04.588Z  INFO 38311 --- [sarkariresult] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-08T17:26:04.660Z  INFO 38311 --- [sarkariresult] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-08T17:26:04.662Z  INFO 38311 --- [sarkariresult] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2419 ms
+2024-09-08T17:26:05.666Z  INFO 38311 --- [sarkariresult] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d66e944, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@469a7575, org.springframework.security.web.context.SecurityContextHolderFilter@3a8cea24, org.springframework.security.web.header.HeaderWriterFilter@64bebd55, org.springframework.security.web.authentication.logout.LogoutFilter@78a8978a, com.example.sarkariresult.config.jwt.AuthTokenFilter@3c50ad4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d318e91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58fd1214, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4351ed61, org.springframework.security.web.session.SessionManagementFilter@7b2bf745, org.springframework.security.web.access.ExceptionTranslationFilter@4451f60c, org.springframework.security.web.access.intercept.AuthorizationFilter@3b24087d]
+2024-09-08T17:26:06.012Z  INFO 38311 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-09-08T17:26:06.035Z  INFO 38311 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Started SarkariresultApplication in 4.683 seconds (process running for 5.884)
+2024-09-08T17:27:00.290Z  INFO 38311 --- [sarkariresult] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-08T17:27:00.290Z  INFO 38311 --- [sarkariresult] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-08T17:27:00.294Z  INFO 38311 --- [sarkariresult] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+README.md
+deploy.sh
+dev.sh
+index
+jsconfig.json
+next.config.mjs
+node_modules
+package-lock.json
+package.json
+postcss.config.mjs
+prod.sh
+public
+sarkariresult
+sql
+src
+tailwind.config.js
+[detached HEAD a3d9f13] init
+ 1 file changed, 7 insertions(+)
+error: src refspec master does not match any
+error: failed to push some refs to 'https://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@github.com/naveenSaini1/sarkariresult.website.git'
+Shell script exited with code: 1
