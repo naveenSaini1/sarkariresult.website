@@ -5,6 +5,7 @@ import LogoHeaderSection from "@/components/logoHeaderSection/LogoHeaderSection"
 import Footer from "@/components/Footer/Footer";
 import { BASE_URL } from "@/constant/ClientUrl";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
+import Social from "@/components/SocialMedaiAccounts/Social";
 
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
 
 
       <body>
+        <Social/>
         <WebsiteTitile />
         <NavBar />
         <LogoHeaderSection />

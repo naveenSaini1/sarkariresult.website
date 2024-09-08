@@ -31,7 +31,7 @@ export default function EachPageData({courseName,searchParams,totalNumber,descri
 
             </div>
 
-            <div className="hidden overflow-hidden flex-col justify-start items-center lg:w-[40%] w-[25%] md:w-[30%] sm:w-[20%] sm:block "
+            <div className="hidden overflow-y-scroll flex-col justify-start items-center lg:w-[40%] w-[25%] md:w-[30%] sm:w-[20%] sm:block "
             >
                 <div className="">
                 <ActiveJobs />

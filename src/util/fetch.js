@@ -10,7 +10,6 @@ const fetchApi = async (url, method = 'GET', body = null, formdata = null) => {
         method,
         body: body ? JSON.stringify(body) : formdata,
         redirect: 'follow',
-        cache: 'no-store',
     };
 
     try {

@@ -3,7 +3,7 @@ import fetchApi from "@/util/fetch";
 import Link from "next/link";
 
 const NewUpdates = async () => {
-  let data = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePost + "/" + 1, "GET");
+  let data = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePost + "/" + 1, "GET") || [];
   // console.log(data);
 
   return (
