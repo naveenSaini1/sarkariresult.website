@@ -10,13 +10,13 @@ import Social from "@/components/SocialMedaiAccounts/Social";
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
-  keywords: ["sarkariresult", "sarkariresult website", "sarkari result", "goverment jobs", "free job alert", "haryanan Jobs"],
+  keywords: ["sarkariresult","Sarkari Result Website","Sarkari Jobs","Government Jobs in India", "sarkariresult website", "sarkari result", "goverment jobs", "free job alert", "haryanan Jobs"],
   title: {
     default: "Home | sarkariresult",
     template: "%s | sarkariresult"
   },
   openGraph: {
-    description: 'apply for online goverment jobs find the details of the goverment jobs',
+    description: 'arkari Result website offers essential resources for government jobs in India. Explore detailed job listings and exam information for Sarkari Naukri.',
     openGraphImage: { image: ["/public/logo.png"] }
   }
 };
