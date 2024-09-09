@@ -99,6 +99,8 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	@Value("${file.path}")
 	private String folderPath;
 	
+	private	String	BASE_URL		=	"https://sarkariresult.website";
+	
 
 
 	
@@ -318,9 +320,14 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			 totalPost		=	Integer.parseInt(content[1]);
 			 expiaryDate		=	content[2];
 			 insertedId		=	postRepo.insertIntoPost(href,originalTitle, url, newTitle,totalPost,active,expiaryDate);
+			
+	
+			 
 			 if(insertedId!=0) {
 				 makeFile(url, content[0]);
 				 makeLayOutFile(newTitle, url);
+				 // sending the Messages
+				 commonUtilityMethods.sendMessage(""+newTitle+"\n "+BASE_URL+"/"+url);
 				 if(category.size()>0)
 					 InsertIntoCoursePost(category, originalTitle);
 			 }
