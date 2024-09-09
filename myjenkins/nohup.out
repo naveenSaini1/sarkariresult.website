@@ -1,0 +1,22 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2024-09-09T07:26:58.654Z  INFO 100556 --- [myjenkins] [           main] c.example.jenkins.MyjenkinsApplication   : Starting MyjenkinsApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 100556 (/projects/sarkariresult.website/myjenkins/myjenkins-0.0.1-SNAPSHOT.jar started by root in /projects/sarkariresult.website/myjenkins)
+2024-09-09T07:26:58.661Z  INFO 100556 --- [myjenkins] [           main] c.example.jenkins.MyjenkinsApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-09-09T07:27:00.254Z  INFO 100556 --- [myjenkins] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-09T07:27:00.282Z  INFO 100556 --- [myjenkins] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-09T07:27:00.282Z  INFO 100556 --- [myjenkins] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09T07:27:00.349Z  INFO 100556 --- [myjenkins] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-09T07:27:00.352Z  INFO 100556 --- [myjenkins] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1602 ms
+2024-09-09T07:27:00.926Z  INFO 100556 --- [myjenkins] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-09T07:27:00.963Z  INFO 100556 --- [myjenkins] [           main] c.example.jenkins.MyjenkinsApplication   : Started MyjenkinsApplication in 3.05 seconds (process running for 3.805)
+2024-09-09T07:31:47.255Z  INFO 100556 --- [myjenkins] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09T07:31:47.255Z  INFO 100556 --- [myjenkins] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-09T07:31:47.258Z  INFO 100556 --- [myjenkins] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
