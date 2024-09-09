@@ -40,7 +40,17 @@ public class CommonUtilityMethods {
 	@Value("${file.path.for.commit.file}")
 	private String commitFilePath;
 	
-	   // Define a set of common stop words to be removed from the slug
+
+	@Value("${telegram.bot.token}")
+	private String botToken;
+
+	@Value("${telegram.channel.chatId}")
+	private String chatId;
+
+	private final String TELEGRAM_API_URL = "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s";
+
+	
+	// Define a set of common stop words to be removed from the slug
     private static final Set<String> STOP_WORDS = new HashSet<>(Arrays.asList(
         "a", "an", "the", "and", "or", "but", "of", "for", "on", "in", "with", "to", "by", "is", "at", "this", "that"
     ));
@@ -204,6 +214,14 @@ public class CommonUtilityMethods {
               e.printStackTrace();
           }
     	
+    }
+    
+
+
+    public void sendMessage(String message) {
+        String urlString = String.format(TELEGRAM_API_URL, botToken, chatId, message);
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getForObject(urlString, String.class);
     }
 
 
