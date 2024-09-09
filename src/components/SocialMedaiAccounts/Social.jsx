@@ -4,7 +4,7 @@ const Social = () => (
   <div className="fixed top-20 right-4 z-40 drop-shadow-2xl">
     <div className="flex flex-col space-y-1">
       <SocialButton
-        platform="Join"
+        platform="Joins"
         color="bg-[#0084c6]"
         link={"https://t.me/sarkariresultwebsiteme"}
         icon={
