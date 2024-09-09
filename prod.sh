@@ -1,7 +1,10 @@
 #!/bin/bash
+git config --global user.name "naveen saini"
+git config --global user.email "naveensaini94667@gmail.com"
+
 
 # Navigate to the repository directory
-cd /var/lib/jenkins/workspace/sarkariresult
+cd  /projects/sarkariresult.website
 
 
 # Stage changes

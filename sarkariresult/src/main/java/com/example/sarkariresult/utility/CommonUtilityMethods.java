@@ -13,7 +13,9 @@ import com.example.sarkariresult.model.GeminiResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.Normalizer;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -34,6 +36,9 @@ public class CommonUtilityMethods {
 	
 	@Value("${sarkari.ai.key}")
 	private String apiKey;
+	
+	@Value("${file.path.for.commit.file}")
+	private String commitFilePath;
 	
 	   // Define a set of common stop words to be removed from the slug
     private static final Set<String> STOP_WORDS = new HashSet<>(Arrays.asList(
@@ -169,6 +174,37 @@ public class CommonUtilityMethods {
         return cleanedCode.toString();
     }
 	
+    
+    public void commitFileToTheGithub() {
+    	
+    	  ProcessBuilder processBuilder = new ProcessBuilder(commitFilePath);
+
+          try {
+              // Start the process
+              Process process = processBuilder.start();
+
+              // Capture the output of the shell script
+              BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+              String line;
+              while ((line = reader.readLine()) != null) {
+                  System.out.println(line);
+              }
+
+              // Capture the error stream of the shell script
+              BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+              while ((line = errorReader.readLine()) != null) {
+                  System.err.println(line);
+              }
+
+              // Wait for the process to complete and get the exit value
+              int exitCode = process.waitFor();
+              System.out.println("Shell script exited with code: " + exitCode);
+
+          } catch (IOException | InterruptedException e) {
+              e.printStackTrace();
+          }
+    	
+    }
 
 
 }

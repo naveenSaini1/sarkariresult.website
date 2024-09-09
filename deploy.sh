@@ -1,3 +1,4 @@
+sudo git pull origin master
 # Install Node.js packages
 sudo npm install
 

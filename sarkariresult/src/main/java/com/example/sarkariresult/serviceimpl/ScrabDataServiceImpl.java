@@ -271,7 +271,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			                	else {
 			                		count++;
 			                	}
-								Thread.sleep(2000);
+								Thread.sleep(1000);
 			            }
 			                if(count==20) {
 			                	System.out.println("everythings is updated");
