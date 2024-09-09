@@ -28329,3 +28329,70 @@ java.lang.Exception: Something Went Wrong
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar!/:na]
 	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
 
+[master 195555a] init
+ 2 files changed, 249 insertions(+)
+ create mode 100644 myjenkins/nohup.out
+To https://github.com/naveenSaini1/sarkariresult.website.git
+   927e057..195555a  master -> master
+Shell script exited with code: 0
+admit   1
+answerKey   1
+result   1
+syllabus   1
+2024-09-09T08:02:25.222Z  WARN 86096 --- [sarkariresult] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s258ms629µs949ns).
+2024-09-09T08:03:00.370Z  WARN 86096 --- [sarkariresult] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m58s928ms352µs538ns).
+admit   1
+answerKey   1
+result   1
+syllabus   1
+2024-09-09T08:32:32.107Z  INFO 86096 --- [sarkariresult] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-09T08:32:32.137Z  INFO 86096 --- [sarkariresult] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.9)
+
+2024-09-09T08:36:56.891Z  INFO 107352 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Starting SarkariresultApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 107352 (/projects/sarkariresult.website/sarkariresult/sarkariresult-0.0.1-SNAPSHOT.jar started by root in /projects/sarkariresult.website/sarkariresult)
+2024-09-09T08:36:56.896Z  INFO 107352 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : The following 1 profile is active: "prod"
+2024-09-09T08:36:59.195Z  INFO 107352 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-09-09T08:36:59.221Z  INFO 107352 --- [sarkariresult] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-09T08:36:59.221Z  INFO 107352 --- [sarkariresult] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09T08:36:59.279Z  INFO 107352 --- [sarkariresult] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-09T08:36:59.281Z  INFO 107352 --- [sarkariresult] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2277 ms
+2024-09-09T08:37:00.279Z  INFO 107352 --- [sarkariresult] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e8279e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b53840a, org.springframework.security.web.context.SecurityContextHolderFilter@3d53e6f7, org.springframework.security.web.header.HeaderWriterFilter@422ab737, org.springframework.security.web.authentication.logout.LogoutFilter@64b018f3, com.example.sarkariresult.config.jwt.AuthTokenFilter@17947e6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ece79fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51da32e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3caafa67, org.springframework.security.web.session.SessionManagementFilter@3946075, org.springframework.security.web.access.ExceptionTranslationFilter@2574a9e3, org.springframework.security.web.access.intercept.AuthorizationFilter@64763e49]
+2024-09-09T08:37:00.639Z  INFO 107352 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-09-09T08:37:00.684Z  INFO 107352 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Started SarkariresultApplication in 4.636 seconds (process running for 6.03)
+2024-09-09T08:37:19.209Z  INFO 107352 --- [sarkariresult] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09T08:37:19.209Z  INFO 107352 --- [sarkariresult] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-09T08:37:19.211Z  INFO 107352 --- [sarkariresult] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-09T08:37:19.400Z  INFO 107352 --- [sarkariresult] [nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-09T08:37:20.050Z  INFO 107352 --- [sarkariresult] [nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ec60fa9
+2024-09-09T08:37:20.053Z  INFO 107352 --- [sarkariresult] [nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+result   3
+answerKey   4
+BR   1
+DL   4
+KL   1
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.9)
+
+2024-09-09T09:54:09.256Z  INFO 2344 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Starting SarkariresultApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 2344 (/projects/sarkariresult.website/sarkariresult/sarkariresult-0.0.1-SNAPSHOT.jar started by root in /projects/sarkariresult.website/sarkariresult)
+2024-09-09T09:54:09.260Z  INFO 2344 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : The following 1 profile is active: "prod"
+2024-09-09T09:54:11.710Z  INFO 2344 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-09-09T09:54:11.739Z  INFO 2344 --- [sarkariresult] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-09T09:54:11.739Z  INFO 2344 --- [sarkariresult] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-09T09:54:11.808Z  INFO 2344 --- [sarkariresult] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-09T09:54:11.810Z  INFO 2344 --- [sarkariresult] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2425 ms
+2024-09-09T09:54:12.964Z  INFO 2344 --- [sarkariresult] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58f2466c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5809fa26, org.springframework.security.web.context.SecurityContextHolderFilter@27f3f512, org.springframework.security.web.header.HeaderWriterFilter@637791d, org.springframework.security.web.authentication.logout.LogoutFilter@626d2016, com.example.sarkariresult.config.jwt.AuthTokenFilter@6f2e1024, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3946075, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@262a1fad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64763e49, org.springframework.security.web.session.SessionManagementFilter@3ad8717d, org.springframework.security.web.access.ExceptionTranslationFilter@348137e8, org.springframework.security.web.access.intercept.AuthorizationFilter@581b1c08]
+2024-09-09T09:54:13.415Z  INFO 2344 --- [sarkariresult] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-09-09T09:54:13.468Z  INFO 2344 --- [sarkariresult] [           main] c.e.s.SarkariresultApplication           : Started SarkariresultApplication in 5.035 seconds (process running for 6.454)
