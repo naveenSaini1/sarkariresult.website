@@ -11,3 +11,5 @@ git add .
 # Commit changes
 git commit -m "init"
 
+# Push changes to GitHub
+git push origin master
