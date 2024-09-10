@@ -37,9 +37,12 @@ public class ScrabDataController {
 	@Scheduled(cron = "0 0 * * * *") 
 	public ResponseEntity<String> getTheNewUpdatePost(){
 		System.out.println("the getTheNewUpdatePost has start"+new Date().toLocaleString());
-		scrabDataService.getTheData();
+		if(scrabDataService.getTheData()>0)	{	
+			System.out.println("the getTheNewUpdatePost has end"+new Date().toLocaleString());
+			commonUtilityMethods.commitFileToTheGithub();
+		}
 		System.out.println("the getTheNewUpdatePost has end"+new Date().toLocaleString());
-		commonUtilityMethods.commitFileToTheGithub();
+
 		return new ResponseEntity<String>(new String("getTheNewUpdatePost"),HttpStatus.OK);
 	}
 	
@@ -50,6 +53,7 @@ public class ScrabDataController {
 		System.out.println("the getht activ post has start"+new Date().toLocaleString());
 
 		scrabDataService.getTheActivePost();
+		scrabDataService.getTheTodayPostUpdate();
 		System.out.println("the getht activ post has end"+new Date().toLocaleString());
 
 		return new ResponseEntity<String>(new String("getTheActivePost"),HttpStatus.OK);
@@ -62,6 +66,16 @@ public class ScrabDataController {
 		return new ResponseEntity<String>(new String("indexingCategory"),HttpStatus.OK);
 
 	}
+	
+	@GetMapping("/getTheHaryanaTodayUpdate")
+	public ResponseEntity<String> getTheHaryanaTodayUpdate() throws Exception{
+		scrabDataService.getTheTodayPostUpdate();
+		return new ResponseEntity<String>(new String("indexingCategory"),HttpStatus.OK);
+
+	}
+	
+	
+	
 	
 //	@GetMapping("/checkingCommitFile")
 //	public ResponseEntity<String> checkingCommitFile() throws Exception{

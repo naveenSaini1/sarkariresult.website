@@ -4,7 +4,9 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -29,11 +31,14 @@ import com.example.sarkariresult.constatns.DefaultConstants;
 import com.example.sarkariresult.model.CoursePost;
 import com.example.sarkariresult.model.GeminiResponse;
 import com.example.sarkariresult.repositary.PostRepo;
+import com.example.sarkariresult.repositary.TodayUpdateRepo;
 import com.example.sarkariresult.service.ScrabDataService;
 import com.example.sarkariresult.utility.CommonUtilityMethods;
 import com.example.sarkariresult.utility.FindCategory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+
+import lombok.val;
 
 /**
  * Author: Naveen Saini
@@ -45,6 +50,9 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 
 	@Autowired
 	private	PostRepo				postRepo;
+	
+	@Autowired
+	private TodayUpdateRepo			todayUpdateRepo;
 	
 	@Autowired
 	private FindCategory			findCategory;
@@ -100,6 +108,8 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	private String folderPath;
 	
 	private	String	BASE_URL		=	"https://sarkariresult.website";
+	
+	private	String	HARYANA_JOB_URL	=	"https://haryanajobs.in/";
 	
 
 
@@ -227,9 +237,10 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	        }
 	        return count;
 	    }
-	public void getTheNewUpdateLink() throws InterruptedException {
+	public int getTheNewUpdateLink() throws InterruptedException {
 		 Document 		doc				=	null;
 		 Integer		count			=	0;
+		 Integer        isNeedToUpdate	=	0;
 		 
 		 
 		
@@ -243,7 +254,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			        // Check if any tables are found within the div
 			        if (table.isEmpty()) {
 			            System.out.println("No tables found within the div with classes 'lsnewuts' and 'nupdate969430'.");
-			            return;
+			            return 0;
 			        }
 			        
 
@@ -269,6 +280,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			                	if(url==null) {
 			                		
 				                	saveFileProcess(link,title,0);
+				                	isNeedToUpdate++;
 			                	}
 			                	else {
 			                		count++;
@@ -277,7 +289,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			            }
 			                if(count==20) {
 			                	System.out.println("everythings is updated");
-			                	return;
+			                	return 0;
 			               };
 			         }
 
@@ -285,6 +297,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 				System.out.println(e.getMessage());
 			}  
 
+			return isNeedToUpdate;
 			
 			
 		
@@ -467,14 +480,15 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 
 
 	@Override
-	public void getTheData() {
+	public int getTheData() {
 		
 		try {
-			getTheNewUpdateLink();
+			return getTheNewUpdateLink();
 		} catch (InterruptedException e) {
 			System.out.println(e.getMessage());
 
-		}		
+		}
+		return 0;
 		
 	}
 
@@ -483,6 +497,78 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	public void getTheActivePost() {
 
 		getTheActiveLink();
+		
+	}
+
+
+	@Override
+	public void getTheTodayPostUpdate() {
+		 Document		doc					=	null;	
+		 LocalDate		time				= LocalDate.now();
+		 String			validateItsToday	= time.getDayOfMonth()+"."+time.getMonthValue()+"."+time.getYear();
+		 String			responseDate		= null;
+		 Integer 		ifThePostPresetn	=	0;
+		 
+		 		try {
+		 					doc 		 = Jsoup.connect(HARYANA_JOB_URL).get();
+					String 	title = doc.title(); 
+					
+					System.out.println(title);
+					
+					Element	firstFigureTag= doc.selectFirst("figure");
+					 if (firstFigureTag != null) {
+				            Element firstDivSibling = firstFigureTag.previousElementSibling();
+				            
+				            responseDate	=	commonUtilityMethods.getValueInsideParentheses(firstDivSibling.text().trim());
+				            
+				            if (firstDivSibling != null && firstDivSibling.tagName().equals("div")) {
+				                System.out.println("First preceding div sibling: " + firstDivSibling.text()+"day "+time.getDayOfMonth()+" mon "+time.getMonthValue());
+				            
+				                if(responseDate!=null && responseDate.equals(validateItsToday.trim())) {
+				                	
+				       				Elements table = firstFigureTag.select("table tbody");
+				       				
+				       				System.out.println(table.html());
+				                	Elements rows = table.select("tr");
+							            for (Element row : rows) {
+							                // Extract the title
+							                 title = row.select("td:nth-child(2)").text().trim();
+							                 ifThePostPresetn	=	todayUpdateRepo.checkIfTheContentAndDateExist(title, responseDate);
+							                 if(ifThePostPresetn!=0)return;;
+							                 
+											 String message = String.format(
+													    "*Important Notice Alert 🔔*\n\n" +  // Bold text for the title
+													    "*%s*\n\n" +                        // Bold text for the title content
+													    "[Go For More Info](%s)",           // Hyperlink for the BASE_URL
+													    title, BASE_URL
+													);
+											 commonUtilityMethods.sendMessage(message);
+							                 todayUpdateRepo.insertInotTodayUpdate(title, responseDate);
+							                 Thread.sleep(1000);
+							                
+							            }
+				                	
+				                }
+				                
+				            }
+				            
+				            else {
+				                System.out.println("No preceding div sibling found.");
+				            }
+				            
+				            
+				        } else {
+				            System.out.println("No figure element found.");
+				        }
+					
+					
+
+				} catch (IOException | InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+		 		
+		
+		
 		
 	}
 	

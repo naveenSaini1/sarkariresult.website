@@ -56,5 +56,15 @@ public class SqlConstants {
     
     @Value("${INSERT_MESSAGE_INTO_CONTACT}")
     public		String			INSERT_MESSAGE_INTO_CONTACT;
+    
+    // TODAYUPDATE
+    @Value("${INSERT_INTO_TODAY_UPDATE}")
+    public		String			INSERT_INTO_TODAY_UPDATE;
+    
+    @Value("${SELECT_COUNT_IF_THE_TODAY_UPDATE_EXIST}")
+    public		String			SELECT_COUNT_IF_THE_TODAY_UPDATE_EXIST;
+    
+    @Value("${GET_THE_TODAY_CONTENT_OF_TODAY_UPDATE}")
+    public		String			GET_THE_TODAY_CONTENT_OF_TODAY_UPDATE;
 }
 

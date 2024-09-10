@@ -5,7 +5,8 @@ package com.example.sarkariresult.service;
  */
 public interface ScrabDataService {
 	
-	public void getTheData();
+	public int getTheData();
 	public void getTheActivePost();
+	public void getTheTodayPostUpdate();
 
 }

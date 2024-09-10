@@ -224,5 +224,22 @@ public class CommonUtilityMethods {
         restTemplate.getForObject(urlString, String.class);
     }
 
+    
+    public static String getValueInsideParentheses(String input) {
+    	if(input==null)return null;
+    	
+    	String response		=	null;
+        Pattern pattern		= 	Pattern.compile("\\((.*?)\\)"); 
+        Matcher matcher 	= 	pattern.matcher(input);
+
+        if (matcher.find()) {
+            response	= matcher.group(1);
+            
+            return response;
+            
+        }
+
+        return response;
+    }
 
 }
