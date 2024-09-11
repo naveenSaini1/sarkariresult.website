@@ -66,5 +66,12 @@ public class SqlConstants {
     
     @Value("${GET_THE_TODAY_CONTENT_OF_TODAY_UPDATE}")
     public		String			GET_THE_TODAY_CONTENT_OF_TODAY_UPDATE;
+    
+    @Value("${GET_THE_MATCHING_DATES}")
+    public		String			GET_THE_MATCHING_DATES;
+    
+    @Value("${GET_THE_MATCHING_DATE_TOTOAL}")
+    public		String			GET_THE_MATCHING_DATE_TOTOAL;
+    
 }
 

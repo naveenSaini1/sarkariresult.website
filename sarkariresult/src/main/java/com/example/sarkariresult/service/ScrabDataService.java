@@ -7,6 +7,5 @@ public interface ScrabDataService {
 	
 	public int getTheData();
 	public void getTheActivePost();
-	public void getTheTodayPostUpdate();
 
 }

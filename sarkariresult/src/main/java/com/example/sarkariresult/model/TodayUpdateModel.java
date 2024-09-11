@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TodayUpdateModel {
-	 private String 		date;
-	 private List<String>	content; 
+	 private String 				date;
+	 private List<TodayUpdateDto>	obj; 
 	
 
 }

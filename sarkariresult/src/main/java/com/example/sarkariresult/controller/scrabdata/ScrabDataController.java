@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.sarkariresult.service.ScrabDataService;
+import com.example.sarkariresult.service.TodayUpdateService;
 import com.example.sarkariresult.utility.CommonUtilityMethods;
 import com.example.sarkariresult.utility.FindCategory;
 
@@ -25,6 +26,9 @@ public class ScrabDataController {
 	@Autowired
 	private	ScrabDataService	scrabDataService;
 	
+	@Autowired
+	private	TodayUpdateService	todayUpdateService;
+	
 	
 	@Autowired
 	private FindCategory			findCategory;
@@ -37,7 +41,9 @@ public class ScrabDataController {
 	@Scheduled(cron = "0 0 * * * *") 
 	public ResponseEntity<String> getTheNewUpdatePost(){
 		System.out.println("the getTheNewUpdatePost has start"+new Date().toLocaleString());
-		if(scrabDataService.getTheData()>0)	{	
+		Integer count	=	scrabDataService.getTheData();
+		System.out.println("count===================="+count);
+		if(count>0)	{	
 			System.out.println("the getTheNewUpdatePost has end"+new Date().toLocaleString());
 			commonUtilityMethods.commitFileToTheGithub();
 		}
@@ -51,9 +57,8 @@ public class ScrabDataController {
 	@Scheduled(cron = "0 30 * * * *") 
 	public ResponseEntity<String> getTheActivePost(){
 		System.out.println("the getht activ post has start"+new Date().toLocaleString());
-
 		scrabDataService.getTheActivePost();
-		scrabDataService.getTheTodayPostUpdate();
+		todayUpdateService.getTheTodayPostUpdate();
 		System.out.println("the getht activ post has end"+new Date().toLocaleString());
 
 		return new ResponseEntity<String>(new String("getTheActivePost"),HttpStatus.OK);
@@ -69,7 +74,7 @@ public class ScrabDataController {
 	
 	@GetMapping("/getTheHaryanaTodayUpdate")
 	public ResponseEntity<String> getTheHaryanaTodayUpdate() throws Exception{
-		scrabDataService.getTheTodayPostUpdate();
+		todayUpdateService.getTheTodayPostUpdate();
 		return new ResponseEntity<String>(new String("indexingCategory"),HttpStatus.OK);
 
 	}

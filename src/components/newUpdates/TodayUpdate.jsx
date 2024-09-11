@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const TodayUpdate = async () => {
   let data = await fetchApiNoCache(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getTheTodayUpdateContent, "GET") || {};
-  // console.log(data);
+  console.log(data);
 
   return (
     <>
@@ -17,13 +17,16 @@ const TodayUpdate = async () => {
           </div>
           <div className="bg-white p-6">
             <ul className="flex flex-wrap gap-4 justify-start">
-              {data?.content?.map((el, index) => (
+              {data?.obj?.map((el, index) => (
                 <li
                   className="w-full md:w-[45%] flex items-start gap-2 text-lg font-semibold text-gray-800 hover:text-red-500 transition duration-300 "
-                  key={el}
+                  key={el.url}
                 >
                   <span className="text-blue-500">{index + 1}.</span>
-                    {el}
+                  
+                    <Link href={el.url} className="underline hover:no-underline ">
+                    {el.content}
+                  </Link>
                   
                 </li>
               ))}
@@ -31,7 +34,7 @@ const TodayUpdate = async () => {
           </div>
 
           <div className="flex justify-center w-full mt-5 text-xl font-bold">
-            <h4 className="text-center w-full text-red-600 underline "><Link  className="block text-center" href={"/viewAll?page=1"}>View All</Link></h4>
+            <h4 className="text-center w-full text-red-600 underline block "><Link  className="block text-center" href={"/dailyupdates?page=1"}>View All</Link></h4>
         </div>
         </div>
 

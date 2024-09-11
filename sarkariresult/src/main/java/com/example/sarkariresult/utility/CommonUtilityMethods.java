@@ -14,6 +14,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.Normalizer;
@@ -46,8 +49,15 @@ public class CommonUtilityMethods {
 
 	@Value("${telegram.channel.chatId}")
 	private String chatId;
+	
+	@Value("${file.path}")
+	private String folderPath;
 
 	private final String TELEGRAM_API_URL = "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s";
+
+	public final String PROMPT_FOR_VALIDATION = "Validate and correct the following Next.js component ane make sure the code follow the next js standards and all the open tag brackets have close brackets: %s just return the code without any explations";
+
+	public final String PROMPT_FOR_ALERTNATE_TITLE = "Generate a concise headline for an \" %s\" . Keep it informative and engaging. limit only 1";
 
 	
 	// Define a set of common stop words to be removed from the slug
@@ -241,5 +251,107 @@ public class CommonUtilityMethods {
 
         return response;
     }
+	public void makeFile(String fileName,String content) {
+		String fullPath=folderPath+File.separator+fileName;
+		File dir = new File(fullPath);
+		if(dir.exists()) {
+			return;
+		}
+        dir.mkdir();
 
+        try {
+            File file1 = new File(fullPath+File.separator+"page.jsx");
+            FileWriter fileWriter = new FileWriter(file1);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(content);
+            bufferedWriter.close();
+        } catch (IOException e) {
+        	System.out.println(e.getMessage());
+        }
+    
+		
+	}
+	
+	public void makeLayOutFile(String title,String fileName) {
+		String fullPath=folderPath+File.separator+fileName;
+		File dir = new File(fullPath);
+		if(!dir.exists()) {
+			return;
+		}
+     
+
+        try {
+            File file1 = new File(fullPath+File.separator+"layout.jsx");
+            FileWriter fileWriter = new FileWriter(file1);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write("import { BASE_URL } from \"@/constant/ClientUrl\";export const metadata = {metadataBase:new URL(BASE_URL + \"/ "+fileName+"\"),keywords:[\"sarkariresult\",\"sarkariresult website\",\"sarkari result\",\"goverment jobs\",\"free job alert\",\"haryanan Jobs\"], title: { default:\" "+title.trim()+"| sarkariresult.website"+" \",      template: `"+"%s | sarkarresult.website"+"`   },openGraph: {description: 'apply for online goverment jobs find the details of the goverment jobs', openGraphImage:{image:[\"/public/logo.png\"]} }};export default function admitCardLayout({ children }) { return (<><section className=\"text-center overflow-y-scroll\">{children}</section> </>   );}");
+            bufferedWriter.close();
+        } catch (IOException e) {
+        	System.out.println(e.getMessage());
+
+
+        }
+		
+	}
+	
+	public static String extractString(String input) {
+		
+		 String regex = "```([\\s\\S]*?)```"; // [\\s\\S] matches any character, including newlines
+	        Pattern pattern = Pattern.compile(regex);
+	        Matcher matcher = pattern.matcher(input);
+
+	        // Check if the pattern is found
+	        if (matcher.find()) {
+	            // Return the content found between the triple backticks
+	            return matcher.group(1).trim();
+	        }
+
+	        // Return null if no match is found
+	        return null;
+   }
+	
+	
+	 public static int countTripleBackticks(String s) {
+	        /**
+	         * Counts the number of occurrences of triple backticks (````) in the input string.
+	         *
+	         * @param s The input string.
+	         * @return The count of triple backticks.
+	         */
+	        String pattern = "```";
+	        Pattern regex = Pattern.compile(pattern);
+	        Matcher matcher = regex.matcher(s);
+	        int count = 0;
+	        while (matcher.find()) {
+	            count++;
+	        }
+	        return count;
+	    }
+	
+	 
+		public String handleSingleBacktickResponse(String aiResponse) {
+		    int count = countTripleBackticks(aiResponse);
+		    int defaultMinux=2000;
+
+		    while (count != 2) {
+		        // Cut the response to half its current length
+		        aiResponse = aiResponse.substring(0, aiResponse.length()-defaultMinux);
+		        System.out.println("Truncated AI Response Length: " + aiResponse.length());
+
+		        // Send the request again for validation
+		        aiResponse = getTheAiRequest(String.format(PROMPT_FOR_VALIDATION, aiResponse));
+		        System.out.println("Validated AI Response Length: " + aiResponse.length());
+
+		        // Count occurrences of triple backticks again
+		        count = countTripleBackticks(aiResponse);
+		        System.out.println("Triple Backticks Count after validation: " + count);
+		        defaultMinux+=2000;
+		    }
+
+		    // If we exit the loop with count == 2, return the cleaned response
+		    return (count == 2) ? aiResponse : null;
+		}
+
+	
+    
 }

@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.example.sarkariresult.constatns.SqlConstants;
+import com.example.sarkariresult.model.TodayUpdateDto;
 import com.example.sarkariresult.repositary.TodayUpdateRepo;
 import com.example.sarkariresult.rowmapper.TodayUpdateRowMapper;
 
@@ -24,8 +25,8 @@ public class TodayUpdateRepoImpl implements TodayUpdateRepo {
 	private SqlConstants	sqlConstants;
 
 	@Override
-	public Integer insertInotTodayUpdate(String content, String date) {
-		Object[]		data	=	{content,date};
+	public Integer insertInotTodayUpdate(String url,String content, String date) {
+		Object[]		data	=	{url,content,date};
 		
 		return jdbcTemplate.update(sqlConstants.INSERT_INTO_TODAY_UPDATE,data);
 	}
@@ -38,9 +39,20 @@ public class TodayUpdateRepoImpl implements TodayUpdateRepo {
 	}
 
 	@Override
-	public List<String> getTheConentOfToday(String mtachingDate) {
+	public List<TodayUpdateDto> getTheConentOfToday(String mtachingDate) {
 		Object[]		data	=	{mtachingDate};
 		return jdbcTemplate.query(sqlConstants.GET_THE_TODAY_CONTENT_OF_TODAY_UPDATE,new TodayUpdateRowMapper.GetTheListContent(), data);
+	}
+
+	@Override
+	public Integer getTheTotalItems() {
+		return jdbcTemplate.query(sqlConstants.GET_THE_MATCHING_DATE_TOTOAL,new TodayUpdateRowMapper.getTheTotalNumber());
+	}
+
+	@Override
+	public List<String> getTheMathicngDate(Integer limit, Integer offset) {
+		Object[]		data	=	{limit,offset};
+		return jdbcTemplate.query(sqlConstants.GET_THE_MATCHING_DATES, new TodayUpdateRowMapper.getTheTotalMatchingList(),data);
 	}
 
 }

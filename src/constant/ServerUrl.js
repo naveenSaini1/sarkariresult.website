@@ -13,7 +13,10 @@ export const    endPoints   =   {
     submitContactForm:"/submitContactForm",
     getTheTotalNumberPages:"/getTheTotalNumberPages",
     getThePostForSiteMap:"/getThePostForSiteMap",
-    getTheTodayUpdateContent:"/getTheTodayUpdateContent"
+    getTheTodayUpdateContent:"/getTheTodayUpdateContent",
+    getTheTodayUpdateTotalNumber:"/getTheTodayUpdateTotalNumber",
+    getTheAllMatchingDates:"/getTheAllMatchingDates",
+    getTheUpdatesByMatchingDate:"/getTheUpdatesByMatchingDate"
 }
 
 export  const   PUBLIC_PREFIX   =   "/public"
