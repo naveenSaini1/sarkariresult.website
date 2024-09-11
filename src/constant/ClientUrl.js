@@ -9,7 +9,8 @@ export const clientEndPoints={
         search:"/search" ,  
         viewAll:"/viewAll",
         privacy:"/privacy" ,
-        answerKey:"/answerKey"
+        answerKey:"/answerKey",
+        dailyupdates:"/dailyupdates"
 }
 
 export const   BASE_URL = "https://sarkariresult.website"

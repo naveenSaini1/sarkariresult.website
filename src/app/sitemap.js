@@ -27,6 +27,7 @@ export default async function SiteMap (){
             {url:BASE_URL+clientEndPoints.search,lastModified:new Date()},
             {url:BASE_URL+clientEndPoints.syllabus,lastModified:new Date()},
             {url:BASE_URL+clientEndPoints.viewAll,lastModified:new Date()},
+            {url:BASE_URL+clientEndPoints.dailyupdates,lastModified:new Date()},
             ...allPost
         ]
     )
