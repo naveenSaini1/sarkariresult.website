@@ -41,15 +41,19 @@ public class ScrabDataController {
 	@Scheduled(cron = "0 0 * * * *") 
 	public ResponseEntity<String> getTheNewUpdatePost(){
 		System.out.println("the getTheNewUpdatePost has start"+new Date().toLocaleString());
-		Integer count	=	scrabDataService.getTheData();
-		System.out.println("count===================="+count);
-		if(count>0)	{	
+		try {
+		    Integer count = scrabDataService.getTheData();
+		    if (count > 0) {
+		        commonUtilityMethods.commitFileToTheGithub();
+		    }
 			System.out.println("the getTheNewUpdatePost has end"+new Date().toLocaleString());
-			commonUtilityMethods.commitFileToTheGithub();
+		} catch (Exception e) {
+		    System.out.println("An error occurred: {}"+ e.getMessage());
+		    return new ResponseEntity<>("Error occurred while processing", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		System.out.println("the getTheNewUpdatePost has end"+new Date().toLocaleString());
+	    return new ResponseEntity<>("getTheNewUpdatePost", HttpStatus.OK);
 
-		return new ResponseEntity<String>(new String("getTheNewUpdatePost"),HttpStatus.OK);
+
 	}
 	
 	
