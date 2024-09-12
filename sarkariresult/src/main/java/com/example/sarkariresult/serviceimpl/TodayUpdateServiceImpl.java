@@ -149,10 +149,10 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 							                // Extract the title
 							                 title = row.select("td:nth-child(2)").text().trim();
 							                 link = row.select("a").attr("href");
-
+							                 System.out.println(title);
 							                 ifThePostPresent	=	todayUpdateRepo.checkIfTheContentAndDateExist(title, responseDate);
 							                 
-							                 if(ifThePostPresent!=0)return;;
+							                 if(ifThePostPresent!=0)continue;
 							                 
 											 saveFileProcess(link, title, 0, responseDate);
 							                 Thread.sleep(2000);
