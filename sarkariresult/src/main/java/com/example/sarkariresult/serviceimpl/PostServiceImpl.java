@@ -52,7 +52,7 @@ public class PostServiceImpl implements PostService{
 		courseId		=	new CategorysConstants().getTheCategoryIdMap().get(courseName);
 		
 		if(courseId==null) { 
-			System.out.println("getting course id null courseId"+courseId);
+			System.out.println("getting course id null for course"+courseName+" page Number: "+page);
 			return new ArrayList<>();
 			}
 		
@@ -73,7 +73,7 @@ public class PostServiceImpl implements PostService{
 		categoryId		=	new CategorysConstants().getTheCategoryIdMap().get(categoryName);
 		
 		if(categoryId==null) { 
-			System.out.println("getting categoryId  null categoryId:"+categoryId);
+			System.out.println("getting categoryId  null categoryId for categoryName"+categoryName);
 
 			return 0;	
 			}	
@@ -91,7 +91,7 @@ public class PostServiceImpl implements PostService{
 
 		
 		if(query==null || query.trim().equals("") || page==null) {
-			System.out.println("getting query null or empty or page is null in searchThe post method ");
+			System.out.println("getting query null or empty or page is null in searchThe post method for "+query);
 		}
 		
 		
