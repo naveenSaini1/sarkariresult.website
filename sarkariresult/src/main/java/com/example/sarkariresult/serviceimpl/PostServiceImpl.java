@@ -1,5 +1,6 @@
 package com.example.sarkariresult.serviceimpl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +51,10 @@ public class PostServiceImpl implements PostService{
 		
 		courseId		=	new CategorysConstants().getTheCategoryIdMap().get(courseName);
 		
-		if(courseId==null) throw new Exception("Something Went Wrong");
+		if(courseId==null) { 
+			System.out.println("getting course id null courseId"+courseId);
+			return new ArrayList<>();
+			}
 		
 		
 		return postRepo.getThePostByCourseId(courseId, defualMessageLimit, offset);
@@ -68,7 +72,11 @@ public class PostServiceImpl implements PostService{
 
 		categoryId		=	new CategorysConstants().getTheCategoryIdMap().get(categoryName);
 		
-		if(categoryId==null) throw new Exception("Something Went Wrong");		
+		if(categoryId==null) { 
+			System.out.println("getting categoryId  null categoryId:"+categoryId);
+
+			return 0;	
+			}	
 		
 		totalPage	=	postRepo.getTheTotalNumber(categoryId);
 		totalPage 	=(int)Math.ceil((double)totalPage/DefaultConstants.DEFAULT_LIMIT_FOR_POST);
@@ -82,7 +90,9 @@ public class PostServiceImpl implements PostService{
 		
 
 		
-		if(query==null || query.trim().equals("") || page==null) throw new Exception("Something Went Wrong");
+		if(query==null || query.trim().equals("") || page==null) {
+			System.out.println("getting query null or empty or page is null in searchThe post method ");
+		}
 		
 		
 		return postRepo.searchTheQuery(query, defualMessageLimit, offset);

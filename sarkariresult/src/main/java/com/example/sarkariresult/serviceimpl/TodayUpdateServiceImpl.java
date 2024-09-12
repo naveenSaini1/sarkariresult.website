@@ -121,7 +121,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 		 LocalDate		time				= LocalDate.now();
 		 String			validateItsToday	= time.getDayOfMonth()+"."+time.getMonthValue()+"."+time.getYear();
 		 String			responseDate		= null;
-		 Integer 		ifThePostPresetn	=	0;
+		 Integer 		ifThePostPresent	=	0;
 		 String			link				=	"";
 		 
 		 		try {
@@ -137,7 +137,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 				            responseDate	=	commonUtilityMethods.getValueInsideParentheses(firstDivSibling.text().trim());
 				            
 				            if (firstDivSibling != null && firstDivSibling.tagName().equals("div")) {
-				                System.out.println("First preceding div sibling: " + firstDivSibling.text()+"day "+time.getDayOfMonth()+" mon "+time.getMonthValue());
+//				                System.out.println("First preceding div sibling: " + firstDivSibling.text()+"day "+time.getDayOfMonth()+" mon "+time.getMonthValue());
 				            
 				                if(responseDate!=null && responseDate.equals(validateItsToday.trim())) {
 				                	
@@ -150,12 +150,12 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 							                 title = row.select("td:nth-child(2)").text().trim();
 							                 link = row.select("a").attr("href");
 
-							                 ifThePostPresetn	=	todayUpdateRepo.checkIfTheContentAndDateExist(title, responseDate);
+							                 ifThePostPresent	=	todayUpdateRepo.checkIfTheContentAndDateExist(title, responseDate);
 							                 
-							                 if(ifThePostPresetn!=0)return;;
+							                 if(ifThePostPresent!=0)return;;
 							                 
 											 saveFileProcess(link, title, 0, responseDate);
-							                 Thread.sleep(1000);
+							                 Thread.sleep(2000);
 							                
 							            }
 				                	
