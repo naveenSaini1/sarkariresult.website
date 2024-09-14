@@ -34,6 +34,7 @@ public interface PostRepo {
 	public List<Post>		getTheBulkPostSitemMap();
 	
 	public Integer		getTheTotalNumberPage();
+	
 
 
 

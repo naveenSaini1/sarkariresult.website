@@ -14,7 +14,7 @@ public interface TodayUpdateService {
 	public Integer		inserIntoTodayUpdateService(String content,String date);
 	public Integer		selectIfTheCotnentAndTheDateIsExist(String content,String date);
 	public TodayUpdateModel getTheTodayContent();
-	public void getTheTodayPostUpdate();
+	public int getTheTodayPostUpdate();
 	
 	public Integer		getTheTotalPagesOfMatcingDates();
 	

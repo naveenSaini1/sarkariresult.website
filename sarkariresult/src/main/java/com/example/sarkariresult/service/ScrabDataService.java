@@ -6,6 +6,6 @@ package com.example.sarkariresult.service;
 public interface ScrabDataService {
 	
 	public int getTheData();
-	public void getTheActivePost();
+	public int getTheActivePost();
 
 }

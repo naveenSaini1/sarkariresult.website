@@ -36,6 +36,7 @@ public class PostRepoImple implements PostRepo {
 
 		}
 		catch(Exception i) {
+			System.out.println("error in insertinot post table");
 		
 		}
 		return 0;
@@ -144,6 +145,10 @@ public class PostRepoImple implements PostRepo {
 	public Integer getTheTotalNumberPage() {
 		return jdbcTemplate.query(sqlConstants.GET_TOTOAL_PAGES,new PostRowMapper.GetThePaginationTotoalPost());
 	}
+
+
+
+
 
 
 

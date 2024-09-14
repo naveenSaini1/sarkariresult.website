@@ -52,6 +52,9 @@ public class SqlConstants {
     @Value("${GET_TOTOAL_PAGES}")
     public		String			GET_TOTOAL_PAGES;
     
+    @Value("${GET_THE_URL_BY_OURL}")
+    public		String			GET_THE_URL_BY_OURL;
+    
     // contact
     
     @Value("${INSERT_MESSAGE_INTO_CONTACT}")

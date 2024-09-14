@@ -317,9 +317,11 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	}
 
 	
-	public void getTheActiveLink() {
+	public int getTheActiveLink() {
 		 Document 		doc				=	null;
 		 Integer		isUpdated		=	0;
+		 Integer		isNeedToUpdate	=	0;
+		 
 
 		
 		try {
@@ -343,6 +345,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 		                isUpdated	=	postRepo.updateThePostForBulk(href);
 		                
 		                if(isUpdated==0) {
+		                	isNeedToUpdate+=1;
 		                	saveFileProcess(href,linkText,1);
 		                	
 		                }
@@ -354,7 +357,8 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
-		}  
+		} 
+		return isNeedToUpdate;
 		
 		
 	}
@@ -376,16 +380,10 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 
 
 	@Override
-	public void getTheActivePost() {
+	public int getTheActivePost() {
 
-		getTheActiveLink();
+		return getTheActiveLink();
 		
 	}
-
-
-
-	
-	
-	
 
 }

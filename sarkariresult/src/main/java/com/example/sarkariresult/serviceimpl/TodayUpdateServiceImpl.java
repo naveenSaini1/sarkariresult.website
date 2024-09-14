@@ -116,13 +116,14 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 	
 	
 	@Override
-	public void getTheTodayPostUpdate() {
+	public int getTheTodayPostUpdate() {
 		 Document		doc					=	null;	
 		 LocalDate		time				= LocalDate.now();
 		 String			validateItsToday	= time.getDayOfMonth()+"."+time.getMonthValue()+"."+time.getYear();
 		 String			responseDate		= null;
 		 Integer 		ifThePostPresent	=	0;
 		 String			link				=	"";
+		 Integer		isNeedToCommit		=	0;
 		 
 		 		try {
 		 					doc 		 = Jsoup.connect(HARYANA_JOB_URL).get();
@@ -154,7 +155,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 							                 
 							                 if(ifThePostPresent!=0)continue;
 							                 
-											 saveFileProcess(link, title, 0, responseDate);
+							                 isNeedToCommit+=saveFileProcess(link, title, 0, responseDate);
 							                 Thread.sleep(2000);
 							                
 							            }
@@ -177,12 +178,13 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 				} catch (IOException | InterruptedException e) {
 					System.out.println(e.getMessage());
 				}
+		 		return isNeedToCommit;
 		 		
 		
 		
 		
 	}
-	public void saveFileProcess(String href,String title,Integer active,String responseDate) {
+	public int saveFileProcess(String href,String title,Integer active,String responseDate) {
 		
 		 String[]		content			=	null;
 		 String			originalTitle	=	null;
@@ -192,6 +194,9 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 		 Integer		totalPost		=	0;
 		 String			expiaryDate		=	"";
 		 HashSet<String>category		=	new HashSet<>();
+		 String			dbUrl			=	null;
+		 Integer		isNeedToCommit	=	0;
+
 		 originalTitle	=	title;
 		 System.out.println(originalTitle);
 		 System.out.println(href);
@@ -203,7 +208,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 		 
 		 content			=	getTheSinglePostData(href);
 		 
-		 if(content==null) return;
+		 if(content==null) return isNeedToCommit; 
 	
 	
 		 category		=	 findCategory.getTheSearchCategory(originalTitle);
@@ -211,27 +216,31 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 	
 	
 		 totalPost		=	Integer.parseInt(content[1]);
-		 expiaryDate		=	content[2];
-		 insertedId		=	postRepo.insertIntoPost(href,originalTitle, url, newTitle,totalPost,active,expiaryDate);
-         todayUpdateRepo.insertInotTodayUpdate(url,title, responseDate);
-
-		
-
-		 
-		 if(insertedId!=0) {
-			 commonUtilityMethods.makeFile(url, content[0]);
+		 expiaryDate	=	content[2];
+		 dbUrl			=	postRepo.checkIfThePostIsPresent(href);
+		 if(dbUrl==null) {
+			 insertedId		=	postRepo.insertIntoPost(href,originalTitle, url, newTitle,totalPost,active,expiaryDate);
+	    	 commonUtilityMethods.makeFile(url, content[0]);
 			 commonUtilityMethods.makeLayOutFile(newTitle, url);
 			 // sending the Messages
-			 commonUtilityMethods.sendMessage(" Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url);
 			 if(category.size()>0)
 				 InsertIntoCoursePost(category, originalTitle);
+			 
+			 isNeedToCommit+=1;
 		 }
+		 else {
+	         todayUpdateRepo.insertInotTodayUpdate(dbUrl,title, responseDate);
+
+		 }
+		 commonUtilityMethods.sendMessage(" Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url);
 		 
 		}
 		catch(Exception e) {
 //			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
+		
+		return isNeedToCommit;
 	
 	
 	}

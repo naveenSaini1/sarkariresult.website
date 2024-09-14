@@ -93,6 +93,19 @@ public class PostRowMapper {
 		
 	}
 	
+	public static class GetTheUrlByLink implements ResultSetExtractor<String>{
+
+		@Override
+		public String extractData(ResultSet rs) throws SQLException, DataAccessException {
+			while(rs.next()) {
+				return rs.getString("url");
+				
+			}
+			return null;
+		}
+		
+	}
+	
 
 	public static class CheckIfTheUrlIsPresent implements ResultSetExtractor<String>{
 
