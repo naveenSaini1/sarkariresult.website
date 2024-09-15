@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 
-const NotFound = ({ message = "Content not available yet please wait for while", countdownMinutes = 60 }) => {
+const NotFound = ({ message = "Content not available yet please wait for while", countdownMinutes = 2 }) => {
   const [countdown, setCountdown] = useState(countdownMinutes * 60);
 
   useEffect(() => {
