@@ -45,6 +45,7 @@ public class ScrabDataController {
 		    Integer firstCount 	= 	scrabDataService.getTheData();
 		    Integer secondCount	= 	scrabDataService.getTheActivePost();
 		    Integer	thridCount	=	todayUpdateService.getTheTodayPostUpdate();
+		    System.out.println(firstCount+" second count "+secondCount+" thrid count"+thridCount);
 		    if (firstCount > 0 || secondCount>0 || thridCount>0) {
 		        commonUtilityMethods.commitFileToTheGithub();
 		        

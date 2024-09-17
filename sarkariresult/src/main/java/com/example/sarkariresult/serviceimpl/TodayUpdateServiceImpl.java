@@ -227,12 +227,19 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 				 InsertIntoCoursePost(category, originalTitle);
 			 
 			 isNeedToCommit+=1;
-		 }
-		 else {
-	         todayUpdateRepo.insertInotTodayUpdate(dbUrl,title, responseDate);
+			 String messages =	"Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url;
+			 commonUtilityMethods.sendMessage(messages);
+			 commonUtilityMethods.sendMessageToTheWhatsapp(messages);
 
 		 }
-		 commonUtilityMethods.sendMessage(" Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url);
+		 else {
+			 
+	         todayUpdateRepo.insertInotTodayUpdate(dbUrl,title, responseDate);
+	         String messages =	"Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url;
+			 commonUtilityMethods.sendMessage(messages);
+			 commonUtilityMethods.sendMessageToTheWhatsapp(messages);
+
+		 }
 		 
 		}
 		catch(Exception e) {

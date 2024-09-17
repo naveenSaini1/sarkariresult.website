@@ -287,7 +287,9 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 				 commonUtilityMethods.makeFile(url, content[0]);
 				 commonUtilityMethods.makeLayOutFile(newTitle, url);
 				 // sending the Messages
-				 commonUtilityMethods.sendMessage("Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url);
+				 String messages =	"Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url;
+				 commonUtilityMethods.sendMessage(messages);
+				 commonUtilityMethods.sendMessageToTheWhatsapp(messages);
 				 if(category.size()>0)
 					 InsertIntoCoursePost(category, originalTitle);
 			 }

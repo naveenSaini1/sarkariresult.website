@@ -5,8 +5,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.sarkariresult.model.GeminiResponse;
@@ -350,6 +353,27 @@ public class CommonUtilityMethods {
 
 		    // If we exit the loop with count == 2, return the cleaned response
 		    return (count == 2) ? aiResponse : null;
+		}
+		
+		
+		public void sendMessageToTheWhatsapp(String messages) {
+			   RestTemplate restTemplate = new RestTemplate();
+
+		        HttpHeaders headers = new HttpHeaders();
+		        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+		        // Set body
+		        MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
+		        body.add("token", "08d7q8fz6jm6lusx");
+		        body.add("to", "120363336558454771@g.us");
+		        body.add("body", messages);
+
+		        HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(body, headers);
+
+		        String url = "https://api.ultramsg.com/instance94808/messages/chat";
+		        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, request, String.class);
+
+		        System.out.println(response.getBody());
 		}
 
 	
