@@ -89,7 +89,7 @@ const AboutUs = () => {
        
         <p className="text-gray-700">
           Follow us on: <a href="https://www.facebook.com/people/Sarkariresultwebsite/61566030113654/" target="_blank" className="text-secondaryTxtColor hover:underline">Facebook</a>, <a href="https://www.linkedin.com/company/sarkariresultwebsite" className="text-secondaryTxtColor hover:underline" target="_blank">Linkdin</a>,
-           <a href="https://t.me/sarkariresultwebsiteme" className="text-secondaryTxtColor hover:underline">Telegrame</a>
+           <a href="https://t.me/sarkariresultwebsiteme" className="text-secondaryTxtColor hover:underline">Telegrame</a> , 
            <a href="https://whatsapp.com/channel/0029VajLEvd9WtCC6t3RNM3c" className="text-secondaryTxtColor hover:underline">Whatsapp</a>
 
        
