@@ -86,11 +86,13 @@ const AboutUs = () => {
         <p className="text-gray-700 mb-4">
         <span className="font-semibold">Email Us</span> <Link href={clientEndPoints.contact} className="text-blue-500">Message Us</Link>
         </p>
-        <p className="text-gray-700 mb-4">
-          <span className="font-semibold">Phone:</span> +91-XXXXXXXXXX
-        </p>
+       
         <p className="text-gray-700">
-          Follow us on: <a href="#" className="text-secondaryTxtColor hover:underline">Facebook</a>, <a href="#" className="text-secondaryTxtColor hover:underline">Twitter</a>, <a href="#" className="text-secondaryTxtColor hover:underline">Instagram</a>
+          Follow us on: <a href="https://www.facebook.com/people/Sarkariresultwebsite/61566030113654/" target="_blank" className="text-secondaryTxtColor hover:underline">Facebook</a>, <a href="https://www.linkedin.com/company/sarkariresultwebsite" className="text-secondaryTxtColor hover:underline" target="_blank">Linkdin</a>,
+           <a href="https://t.me/sarkariresultwebsiteme" className="text-secondaryTxtColor hover:underline">Telegrame</a>
+           <a href="https://whatsapp.com/channel/0029VajLEvd9WtCC6t3RNM3c" className="text-secondaryTxtColor hover:underline">Whatsapp</a>
+
+       
         </p>
       </section>
 
