@@ -235,7 +235,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 		 else {
 			 
 	         todayUpdateRepo.insertInotTodayUpdate(dbUrl,title, responseDate);
-	         String messages =	"Important Notice Alert 🔔 \n"+dbUrl+"\n "+BASE_URL+"/"+url;
+	         String messages =	"Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+dbUrl;
 			 commonUtilityMethods.sendMessage(messages);
 			 commonUtilityMethods.sendMessageToTheWhatsapp(messages);
 
