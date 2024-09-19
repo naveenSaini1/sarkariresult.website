@@ -1,7 +1,9 @@
 export default function RecruitmentInformation() {
   // Displays recruitment information for UKSSSC Various Vacancy 2024
   return (
+
     <div className="container mx-auto px-4 py-8">
+
       <h1 className="text-3xl font-bold mb-4">UKSSSC Various Vacancy 2024</h1>
 
       <div className="mb-4">
@@ -81,7 +83,8 @@ export default function RecruitmentInformation() {
             <td className="text-center">Stenographer cum Data Entry Operator</td>
             <td className="text-center">03</td>
             <td className="text-center">18 – 42 Years</td>
-            <td className="text-center" rowSpan="2">Inter<br/></br></td>
+            <td className="text-center" rowSpan="2">Inter<br/>
+            </td>
           </tr>
           <tr>
             <td className="text-center">Personnel Assistant/Stenographer Grade II</td>
