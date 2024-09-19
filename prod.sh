@@ -22,7 +22,7 @@ sudo git pull origin master
 sudo npm install
 
 # Build the Node.js application
-sudo npm run build
+sudo npm run build ||  { echo "npm run build failed, exiting..."; exit 1; }
 
 # Delete all running pm2 processes
 sudo pm2 delete all
