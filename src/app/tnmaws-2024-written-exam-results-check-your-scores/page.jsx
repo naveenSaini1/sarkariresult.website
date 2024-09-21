@@ -145,7 +145,7 @@ export default function TNMAWSRecruitment() {
           </tr>
           <tr>
             <td className="p-2 border-2 border-gray-400">
-              <span className="font-bold text-green-500">Written Exam Result (21-09-2024)&nbsp;<br/></br></span>
+              <span className="font-bold text-green-500">Written Exam Result (21-09-2024)</span>
             </td>
             <td colSpan="2" className="p-2 border-2 border-gray-400">
               <a href="https://tnmaws.ucanapply.com/apply_now" target="_blank" rel="nofollow" className="text-blue-500 hover:underline"><b>Click Here</b></a>
@@ -153,7 +153,7 @@ export default function TNMAWSRecruitment() {
           </tr>
           <tr>
             <td className="p-2 border-2 border-gray-400">
-              <span className="font-bold text-green-500">Written Exam Answer Key (18-07-2024)<br/></br></span>
+              <span className="font-bold text-green-500">Written Exam Answer Key (18-07-2024)</span>
             </td>
             <td colSpan="2" className="p-2 border-2 border-gray-400">
               <a href="https://tnmaws.ucanapply.com/apply_now" target="_blank" rel="nofollow" className="text-blue-500 hover:underline"><b>Click Here</b></a>
@@ -210,5 +210,6 @@ export default function TNMAWSRecruitment() {
         </tbody>
       </table>
     </div>
+
   );
 }
