@@ -1,9 +1,10 @@
 import { BASE_URL, clientEndPoints } from "@/constant/ClientUrl";
 import { API_HOST_ADDRESS, endPoints, PUBLIC_PREFIX } from "@/constant/ServerUrl";
 import fetchApi from "@/util/fetch";
+import fetchApiNoCache from "@/util/fetchNoCache";
 
 export default async function SiteMap (){
-    const data = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePostForSiteMap, "GET") || [];
+    const data = await fetchApiNoCache(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePostForSiteMap, "GET") || [];
    console.log(data)
     const allPost=data?.map((el)=>{
         return (
