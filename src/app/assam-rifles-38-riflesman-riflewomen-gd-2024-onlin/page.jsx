@@ -314,12 +314,12 @@ export default function AssamRiflesRecruitment() {
             <tr>
               <th className="border px-4 py-2">Lineman Field (For Male candidates only)</th>
               <th className="border px-4 py-2">18-23 Years</th>
-              <th className="border px-4 py-2">10th Class, ITI (Electric 
+              <th className="border px-4 py-2">10th Class, ITI (Electric </th>
             </tr>
             <tr>
               <th className="border px-4 py-2">Cook</th>
               <th className="border px-4 py-2">18-25 Years</th>
-              <th className="border px-4 py-2">10th Class, ITI (Electric 
+              <th className="border px-4 py-2">10th Class, ITI (Electric </th>
             </tr>
             <tr>
               <th className="border px-4 py-2">Tailor</th>
