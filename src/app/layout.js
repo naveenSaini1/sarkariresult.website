@@ -10,7 +10,7 @@ import Social from "@/components/SocialMedaiAccounts/Social";
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
-  keywords: ["sarkariresult","Sarkari Result Website","Sarkari Jobs","Government Jobs in India", "sarkariresult website", "sarkari result", "goverment jobs", "free job alert", "haryanan Jobs"],
+  keywords: ["sarkariresult","Sarkari Result Website","Sarkari Jobs","Government Jobs in India", "sarkariresult website", "sarkari result", "goverment jobs", "free job alert", "haryanan Jobs","sarkariresult website"],
   title: {
     default: "Home | sarkariresult",
     template: "%s | sarkariresult"
