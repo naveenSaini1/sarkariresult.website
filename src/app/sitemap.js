@@ -5,8 +5,33 @@ import fetchApiNoCache from "@/util/fetchNoCache";
 
 export default async function SiteMap() {
     const data = await fetchApiNoCache(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePostForSiteMap, "GET") || [];
-    console.log(data)
+    let centerPost = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getTheCenters, "GET") || [];
+    let statePost = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getTheStates, "GET") || [];
+    statePost   =   statePost?.map((el)=>{
+        return (
+            {
+                url: `${BASE_URL}/${"category/" + el+"?page=1"}`,
+                lastModified: new Date(),
+                changeFrequency: "daily",
+                priority: 0.8,
+
+            }
+        ) 
+    })
+
+    centerPost  =   centerPost?.map((el)=>{
+        return (
+            {
+                url: `${BASE_URL}/${"category/" + el+"?page=1"}`,
+                lastModified: new Date(),
+                changeFrequency: "daily",
+                priority: 0.8,
+
+            }
+        ) 
+    })
     const allPost = data?.map((el) => {
+    
         return (
             {
                 url: `${BASE_URL}/${el?.url}`,
@@ -64,6 +89,8 @@ export default async function SiteMap() {
                 url: BASE_URL + clientEndPoints.dailyupdates, lastModified: new Date(), changeFrequency: "daily",
                 priority: 0.9,
             },
+            ...centerPost,
+            ...statePost,
             ...allPost
         ]
     )
