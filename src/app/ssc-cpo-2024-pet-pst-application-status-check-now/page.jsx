@@ -1,37 +1,39 @@
 export default function RecruitmentInformation() {
-  // This component displays recruitment information for SSC CPO PET PST 2024. 
-  // It includes details like title, post details, brief information, important dates, 
+  // This component displays recruitment information for SSC CPO PET PST 2024.
+  // It includes details like title, post details, brief information, important dates,
   // and vacancy details. It also provides links to relevant resources.
   return (
     <div className="container mx-auto px-4 py-8">
       <nav aria-label="breadcrumbs" className="rank-math-breadcrumb">
         <p>
-          <a href="https://pmsuryaghar.org.in" className="text-blue-500 hover:underline">
-            
-          </a>
-          <span className="separator"> » </span>
-          <a href="https://pmsuryaghar.org.in/category/admit-card/" className="text-blue-500 hover:underline">
-            Admit card
-          </a>
-          <span className="separator"> » </span>
+          <a
+            href="https://pmsuryaghar.org.in"
+            className="text-blue-500 hover:underline"
+          ></a>
+
           <span className="last">
-            SSC CPO Physical Efficiency Test (PET) and Physical Standards Test (PST) Admit Card 2024, 
-            Application Status for Physical Test, Download Region Wise Links Given Here
+            SSC CPO Physical Efficiency Test (PET) and Physical Standards Test
+            (PST) Admit Card 2024, Application Status for Physical Test,
+            Download Region Wise Links Given Here
           </span>
         </p>
       </nav>
       <header className="entry-header">
         <h1 className="entry-title text-3xl font-bold text-gray-900">
-          SSC CPO PET PST Admit Card 2024, Appication Status for Physical Test, Download Region Wise Links Given Here
+          SSC CPO PET PST Admit Card 2024, Appication Status for Physical Test,
+          Download Region Wise Links Given Here
         </h1>
         <div className="entry-meta mt-2">
           <span className="posted-on">
-            <time className="entry-date published" dateTime="2024-10-04T18:12:02+05:30">
+            <time
+              className="entry-date published"
+              dateTime="2024-10-04T18:12:02+05:30"
+            >
               October 4, 2024
             </time>
           </span>
           <span className="byline">
-            by{' '}
+            by{" "}
             <span
               className="author vcard"
               itemProp="author"
@@ -45,9 +47,7 @@ export default function RecruitmentInformation() {
                 rel="author"
                 itemProp="url"
               >
-                <span className="author-name" itemProp="name">
-                  Admin
-                </span>
+              
               </a>
             </span>
           </span>
@@ -55,11 +55,13 @@ export default function RecruitmentInformation() {
       </header>
       <div className="entry-content" itemProp="text">
         <p className="mt-4">
-          <strong>SSC CPO PET PST Admit Card 2024</strong>: The Staff Selection Commission (SSC) 
-          released the CPO 2024 Tier-1 Result on 2 September 2024. Now, the Physical Efficiency Test (PET) 
-          and Physical Standards Test (PST) for the Delhi Police and Central Armed Police Forces (CAPF) 
-          Sub-Inspectors will be conducted from 14 October 2024. The region-wise schedule and SSC CPO 
-          PET PST Admit Card, Application Status 2024 Download links are given here.
+          <strong>SSC CPO PET PST Admit Card 2024</strong>: The Staff Selection
+          Commission (SSC) released the CPO 2024 Tier-1 Result on 2 September
+          2024. Now, the Physical Efficiency Test (PET) and Physical Standards
+          Test (PST) for the Delhi Police and Central Armed Police Forces (CAPF)
+          Sub-Inspectors will be conducted from 14 October 2024. The region-wise
+          schedule and SSC CPO PET PST Admit Card, Application Status 2024
+          Download links are given here.
         </p>
         <h2 className="wp-block-heading text-2xl font-bold text-gray-900 mt-8">
           SSC CPO PET PST Admit Card 2024 Overview
@@ -83,7 +85,9 @@ export default function RecruitmentInformation() {
               </tr>
               <tr>
                 <td className="px-4 py-2">Post Name</td>
-                <td className="px-4 py-2">Sub-Inspector in CAPFs and Delhi Police</td>
+                <td className="px-4 py-2">
+                  Sub-Inspector in CAPFs and Delhi Police
+                </td>
               </tr>
               <tr>
                 <td className="px-4 py-2">Total Vacancies</td>
@@ -106,35 +110,30 @@ export default function RecruitmentInformation() {
             </tbody>
           </table>
         </figure>
-        <p className="mt-4">
-          Also Read:
-          <a
-            href="https://pmsuryaghar.org.in/uksssc-junior-assistant-and-deo-recruitment/"
-            className="text-blue-500 hover:underline"
-          >
-            <strong>UKSSSC Junior Assistant and DEO Recruitment 2024</strong>
-          </a>
-        </p>
+      
         <h2 className="wp-block-heading text-2xl font-bold text-gray-900 mt-8">
           SSC CPO 2024 Important Dates
         </h2>
         <p className="mt-4">
-          The SSC CPO 2024 Notification was released on 4 March 2024 and the online applications 
-          were invited from 4 March to 28 March 2024. The SSC CPO 2024 Tier-1 CBT exam was conducted 
-          on 27, 28, and 29 June 2024.
+          The SSC CPO 2024 Notification was released on 4 March 2024 and the
+          online applications were invited from 4 March to 28 March 2024. The
+          SSC CPO 2024 Tier-1 CBT exam was conducted on 27, 28, and 29 June
+          2024.
         </p>
         <p className="mt-4">
-          The SSC has released the PET PST Schedule and Admit Cards for the Physical Tests of SSC CPO 2024. 
-          The SSC CPO 2024 PET and PST will be held from 14 to 25 October 2024.
+          The SSC has released the PET PST Schedule and Admit Cards for the
+          Physical Tests of SSC CPO 2024. The SSC CPO 2024 PET and PST will be
+          held from 14 to 25 October 2024.
         </p>
         <h2 className="wp-block-heading text-2xl font-bold text-gray-900 mt-8">
           SSC CPO 2024 Vacancies, Eligibility
         </h2>
         <p className="mt-4">
           <strong>
-            <span className={{ textDecoration: 'underline' }}>Age Limit</span>
+            <span className={{ textDecoration: "underline" }}>Age Limit</span>
           </strong>
-          : The age limit for the SSC CPO 2024 is 20-25 Years (As on 1 August 2024).
+          : The age limit for the SSC CPO 2024 is 20-25 Years (As on 1 August
+          2024).
         </p>
         <figure className="wp-block-table mt-4">
           <table className="table-auto w-full text-left border-collapse">
@@ -166,8 +165,9 @@ export default function RecruitmentInformation() {
           SSC CPO 2024 Selection Process
         </h2>
         <p className="mt-4">
-          The <strong>SSC CGL 2024</strong> selection process includes the Tier-1 CBT exam followed by 
-          the Physical Efficiency Test (PET), Tier-II CBT Exam, Document Verification and Medical Examination.
+          The <strong>SSC CGL 2024</strong> selection process includes the
+          Tier-1 CBT exam followed by the Physical Efficiency Test (PET),
+          Tier-II CBT Exam, Document Verification and Medical Examination.
         </p>
         <ol className="list-decimal ml-4 mt-4">
           <li>Tier-2 CBT Exam</li>
@@ -180,8 +180,9 @@ export default function RecruitmentInformation() {
           SSC CPO 2024 PET and PMT
         </h2>
         <p className="mt-4">
-          The candidates who will qualify the SSC CPO Tier-1 exam will be called for the 
-          Physical Efficiency Test (PET) and Physical Standards Test (PST).
+          The candidates who will qualify the SSC CPO Tier-1 exam will be called
+          for the Physical Efficiency Test (PET) and Physical Standards Test
+          (PST).
         </p>
         <p className="mt-4">
           The details of the SSC CPO PET and PST are given below.
@@ -225,7 +226,8 @@ export default function RecruitmentInformation() {
           SSC CPO PET PST Admit Card 2024 Link
         </h2>
         <p className="mt-4">
-          The SSC CPO 2024 PET PST Admit Card download links are given below region-wise.
+          The SSC CPO 2024 PET PST Admit Card download links are given below
+          region-wise.
         </p>
         <figure className="wp-block-table mt-4">
           <table className="table-auto w-full text-left border-collapse">
