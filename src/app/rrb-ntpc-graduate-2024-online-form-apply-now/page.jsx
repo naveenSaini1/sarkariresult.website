@@ -1,472 +1,175 @@
 export default function RRBRecruitmentInfo() {
-  // This component displays recruitment information for the RRB NTPC (Graduate) 2024 Online Form.
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">RRB NTPC (Graduate) Vacancy 2024</h1>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-4xl font-bold mb-6 text-blue-800">
+        RRB NTPC (Graduate) Recruitment 2024
+      </h1>
 
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Name of the Post:</p>
-        <p>RRB NTPC (Graduate) 2024 Online Form</p>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Post Date:</p>
-        <p>02-09-2024</p>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Total Vacancy:</p>
-        <p>8113</p>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-red-500 mb-1">Brief Information:</p>
+      <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6">
+        <p className="font-bold">Important Announcement:</p>
         <p>
-          Government of India, Ministry of Railways, Railway Recruitment Board
-          (RRB) has published a notification for the recruitment of NTPC
-          Graduate Vacancies in different Railway Recruitment Boards (RRBs).
-          Those Candidates who are interested in the vacancy details &
-          completed all eligibility criteria can read the notification & Apply
-          Online.
+          Railway Recruitment Board has released 8,113 NTPC Graduate vacancies
+          for 2024.
         </p>
       </div>
 
-      <div className="mb-4">
-        <p className="font-bold text-red-500 mb-1">Application Fee</p>
-        <ul className="list-disc pl-5">
-          <li>
-            For all candidates, Out of this fee of Rs. 500/-, an amount of Rs.
-            400/- shall be refunded duly deducting bank charges, on appearing in
-            CBT: <strong>Rs. 500/-</strong>
-          </li>
-          <li>
-            For candidates who belong to SC, ST, Ex-Servicemen, Female,
-            Transgender, Minorities or Economically Backward Class (EBC).
-            (Caution to Candidates: EBC should not be confused with OBC or EWS).
-            This fee of Rs. 250/- shall be refunded duly deducting bank charges as
-            applicable, on appearing CBT: <strong>Rs. 250/-</strong>
-          </li>
-          <li>Payment Mode: <strong>Through Online</strong></li>
-          <li>
-            <strong>Note:</strong> Only candidates who attend CBT will get a
-            refund of their examination fee as mentioned above.
-          </li>
-        </ul>
-      </div>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-blue-700">
+          Key Details
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-white p-4 rounded shadow">
+            <p className="font-bold text-blue-600">Recruitment Name:</p>
+            <p>RRB NTPC (Graduate) 2024</p>
+          </div>
+          <div className="bg-white p-4 rounded shadow">
+            <p className="font-bold text-blue-600">Application Dates:</p>
+            <p>14-09-2024 to 13-10-2024</p>
+          </div>
+          <div className="bg-white p-4 rounded shadow">
+            <p className="font-bold text-blue-600">Total Vacancies:</p>
+            <p>8,113 Positions</p>
+          </div>
+          <div className="bg-white p-4 rounded shadow">
+            <p className="font-bold text-blue-600">Location:</p>
+            <p>Pan India (21 RRB Regions)</p>
+          </div>
+        </div>
+      </section>
 
-      <div className="mb-4">
-        <p className="font-bold text-red-500 mb-1">Important Dates</p>
-        <ul className="list-disc pl-5">
-          <li>
-            Starting Date for Apply Online & Payment of Fee: <strong>14-09-2024</strong>
-          </li>
-          <li>
-            Last Date for Apply Online & Payment of Fee: <strong>13-10-2024 (23:59 hours)</strong>
-          </li>
-        </ul>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-red-500 mb-1">Age Limit (as on 01-01-2025)</p>
-        <ul className="list-disc pl-5">
-          <li>Minimum Age Limit: <strong>18 Years</strong></li>
-          <li>Maximum Age Limit: <strong>36 Years</strong></li>
-          <li>Age Relaxation is Applicable as per Rules.</li>
-        </ul>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-red-500 mb-1">Qualification</p>
-        <ul className="list-disc pl-5">
-          <li>Available on 14-09-2024</li>
-        </ul>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-red-500 mb-1">Vacancy Details</p>
-        <ul className="list-disc pl-5">
-          <li>Vacancies for Graduate Posts:</li>
-        </ul>
-
-        <table className="table-auto w-full text-center mb-4 border-collapse border-2 border-gray-300">
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-blue-700">
+          Vacancy Details
+        </h2>
+        <table className="w-full border-collapse border border-gray-300">
           <thead>
-            <tr>
-              <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-                SI No.
-              </th>
-              <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-                Post Name
-              </th>
-              <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-                Total
-              </th>
+            <tr className="bg-blue-100">
+              <th className="border border-gray-300 p-2">Post Name</th>
+              <th className="border border-gray-300 p-2">Total Vacancies</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="px-4 py-2">1.</td>
-              <td className="px-4 py-2">Commercial cum Ticket Supervisor</td>
-              <td className="px-4 py-2">1736</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2">2.</td>
-              <td className="px-4 py-2">Station Master</td>
-              <td className="px-4 py-2">994</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2">3.</td>
-              <td className="px-4 py-2">Goods Train Manager</td>
-              <td className="px-4 py-2">3144</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2">4.</td>
-              <td className="px-4 py-2">Junior Account Assistant cum Typist</td>
-              <td className="px-4 py-2">1507</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2">5.</td>
-              <td className="px-4 py-2">Senior Clerk cum Typist</td>
-              <td className="px-4 py-2">732</td>
-            </tr>
-            <tr>
-              <td className="px-4 py-2" colSpan="2">
-                Total
+              <td className="border border-gray-300 p-2">
+                Commercial cum Ticket Supervisor
               </td>
-              <td className="px-4 py-2">8113</td>
+              <td className="border border-gray-300 p-2 text-center">1736</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-2">Station Master</td>
+              <td className="border border-gray-300 p-2 text-center">994</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-2">
+                Goods Train Manager
+              </td>
+              <td className="border border-gray-300 p-2 text-center">3144</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-2">
+                Junior Account Assistant cum Typist
+              </td>
+              <td className="border border-gray-300 p-2 text-center">1507</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-2">
+                Senior Clerk cum Typist
+              </td>
+              <td className="border border-gray-300 p-2 text-center">732</td>
             </tr>
           </tbody>
         </table>
-      </div>
+      </section>
 
-      <table className="table-auto w-full text-center mb-4 border-collapse border-2 border-gray-300">
-        <thead>
-          <tr>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              SI No.
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              RRB Region participating in CEN No. 06/2024
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              Zone
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              Commercial cum Ticket Supervisor
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              Station Master
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              Goods Train Manager
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              Junior Account Assistant cum Typist
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              Senior Clerk cum Typist
-            </th>
-            <th className="bg-gray-100 font-bold text-gray-800 px-4 py-2">
-              Total
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="px-4 py-2">1.</td>
-            <td className="px-4 py-2">RRB Ahmedabad</td>
-            <td className="px-4 py-2">WR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">2.</td>
-            <td className="px-4 py-2">RRB Ajmer</td>
-            <td className="px-4 py-2">NWR &amp; WCR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">3.</td>
-            <td className="px-4 py-2">RRB Bangalore</td>
-            <td className="px-4 py-2">SWR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">4.</td>
-            <td className="px-4 py-2">RRB Bhopal</td>
-            <td className="px-4 py-2">WCR &amp; WR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">5.</td>
-            <td className="px-4 py-2">RRB Bhubaneswar</td>
-            <td className="px-4 py-2">ECoR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">6.</td>
-            <td className="px-4 py-2">RRB Bilaspur</td>
-            <td className="px-4 py-2">CR &amp; SECR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">7.</td>
-            <td className="px-4 py-2">RRB chandigarh</td>
-            <td className="px-4 py-2">NR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">8.</td>
-            <td className="px-4 py-2">RRB Chennai</td>
-            <td className="px-4 py-2">SR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">9.</td>
-            <td className="px-4 py-2">RRB Guwahati</td>
-            <td className="px-4 py-2">NFR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">10.</td>
-            <td className="px-4 py-2">RRB Goarkhpur</td>
-            <td className="px-4 py-2">NER</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">11.</td>
-            <td className="px-4 py-2">RRB Jammu &amp; Srinagar</td>
-            <td className="px-4 py-2">NR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">12.</td>
-            <td className="px-4 py-2">RRB Kolkata</td>
-            <td className="px-4 py-2">ER, METRO &amp; SER</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">13.</td>
-            <td className="px-4 py-2">RRB Malda</td>
-            <td className="px-4 py-2">ER &amp; SER</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">14.</td>
-            <td className="px-4 py-2">RRB Mumbai</td>
-            <td className="px-4 py-2">SCR, WR &amp; CR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">15.</td>
-            <td className="px-4 py-2">RRB Muzaffarpur</td>
-            <td className="px-4 py-2">ECR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">16.</td>
-            <td className="px-4 py-2">RRB Patna</td>
-            <td className="px-4 py-2">ECR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">17.</td>
-            <td className="px-4 py-2">RRB Prayagraj</td>
-            <td className="px-4 py-2">NCR &amp;NR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">18.</td>
-            <td className="px-4 py-2">RRB Ranchi</td>
-            <td className="px-4 py-2">SER &amp; ECR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">19.</td>
-            <td className="px-4 py-2">RRB Secunderabad</td>
-            <td className="px-4 py-2">ECoR &amp; SCR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">20.</td>
-            <td className="px-4 py-2">RRB Siliguri</td>
-            <td className="px-4 py-2">NFR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">21.</td>
-            <td className="px-4 py-2">RRB Thiruvananthapuram</td>
-            <td className="px-4 py-2">SR</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-            <td className="px-4 py-2">—</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2" colSpan="3">
-              Total
-            </td>
-            <td className="px-4 py-2">1736</td>
-            <td className="px-4 py-2">994</td>
-            <td className="px-4 py-2">3144</td>
-            <td className="px-4 py-2">1507</td>
-            <td className="px-4 py-2">732</td>
-            <td className="px-4 py-2">8113</td>
-          </tr>
-        </tbody>
-      </table>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-blue-700">
+          Application Fee
+        </h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>
+            For all candidates: <span className="font-bold">Rs. 500/-</span>
+          </li>
+          <li>
+            For SC/ST/Ex-Servicemen/Female/Transgender/Minorities/EBC:{" "}
+            <span className="font-bold">Rs. 250/-</span>
+          </li>
+          <li>
+            Payment Mode: <span className="font-bold">Online</span>
+          </li>
+        </ul>
+        <p className="mt-2 text-sm text-gray-600">
+          Note: Fee refund available on appearing for CBT, subject to
+          conditions.
+        </p>
+      </section>
 
-      <p className="font-bold text-blue-500 mb-4">
-        Interested Candidates Can Read the Full Notification & Apply Online
-      </p>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-blue-700">
+          Age Limit (as on 01-01-2025)
+        </h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>
+            Minimum Age: <span className="font-bold">18 Years</span>
+          </li>
+          <li>
+            Maximum Age: <span className="font-bold">36 Years</span>
+          </li>
+          <li>Age relaxation applicable as per rules</li>
+        </ul>
+      </section>
 
-      <h2 className="font-bold text-red-500 mb-4">Important Links</h2>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-blue-700">
+          Important Links
+        </h2>
+        <div className="space-y-2">
+          <p>
+            <span className="font-bold text-blue-600">Apply Online:</span>{" "}
+            Available from 14-09-2024
+          </p>
+          <p>
+            <span className="font-bold text-blue-600">
+              Detailed Notification:
+            </span>{" "}
+            Available from 14-09-2024
+          </p>
+          <p>
+            <span className="font-bold text-blue-600">Official Website:</span>{" "}
+            <a
+              href="https://indianrailways.gov.in/railwayboard/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Click Here
+            </a>
+            
+          </p>
+        </div>
+        <div className="mb-4">
+          <p className="font-bold text-green-500 mb-1">Short Notification</p>
+          <a
+            href="https://img.freejobalert.com/uploads/2024/09/Notification-RRB-NTPC-Grduate-and-Undergraduate-Posts-2024.pdf"
+            target="_blank"
+            rel="nofollow"
+            className="text-blue-500 underline"
+          >
+            Click Here
+          </a>
+        </div>
 
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Apply Online</p>
-        <p>Available on 14-09-2024</p>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Detailed Notification</p>
-        <p>Available on 14-09-2024</p>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Short Notification</p>
-        <a
-          href="https://img.freejobalert.com/uploads/2024/09/Notification-RRB-NTPC-Grduate-and-Undergraduate-Posts-2024.pdf"
-          target="_blank"
-          rel="nofollow"
-          className="text-blue-500 underline"
-        >
-          Click Here
-        </a>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Syllabus</p>
-        <a
-          href="https://www.freejobalert.com/rrb-ntpc-syllabus/774299/"
-          target="_blank"
-          rel="noopener"
-          className="text-blue-500 underline"
-        >
-          Click Here
-        </a>
-      </div>
-
-      <div className="mb-4">
-        <p className="font-bold text-green-500 mb-1">Official Website</p>
-        <a
-          href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281"
-          target="_blank"
-          rel="nofollow"
-          className="text-blue-500 underline"
-        >
-          Click Here
-        </a>
-      </div>
+        <div className="mb-4">
+          <p className="font-bold text-green-500 mb-1">Syllabus</p>
+          <a
+            href="https://www.freejobalert.com/rrb-ntpc-syllabus/774299/"
+            target="_blank"
+            rel="noopener"
+            className="text-blue-500 underline"
+          >
+            Click Here
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
