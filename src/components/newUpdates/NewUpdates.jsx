@@ -9,7 +9,7 @@ const NewUpdates = async () => {
   return (
     <>
       <section className="">
-        <div className="w-[90%] m-auto mt-10 border-4 border-blue-500 rounded-xl shadow-2xl animate-pulse">
+        <div className="w-[90%] m-auto mt-10 border-4 border-blue-500 rounded-xl shadow-2xl">
           <div className="bg-gradient-to-r from-blue-500 to-indigo-600 py-4 rounded-t-xl">
             <h3 className="text-center text-white font-bold text-2xl">
               🔔 New Updates
