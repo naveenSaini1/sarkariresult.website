@@ -5,6 +5,7 @@ import fetchApiNoCache from "@/util/fetchNoCache";
 
 export default async function SiteMap() {
     const data = await fetchApiNoCache(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getThePostForSiteMap, "GET") || [];
+    data= data.reverse()
     let centerPost = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getTheCenters, "GET") || [];
     let statePost = await fetchApi(API_HOST_ADDRESS + PUBLIC_PREFIX + endPoints.getTheStates, "GET") || [];
     statePost   =   statePost?.map((el)=>{
