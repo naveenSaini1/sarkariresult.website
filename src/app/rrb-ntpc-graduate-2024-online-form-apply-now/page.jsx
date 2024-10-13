@@ -169,7 +169,23 @@ export default function RRBRecruitmentInfo() {
             Click Here
           </a>
         </div>
+        
       </section>
+      <p>RRB NTPC 2024: Railway Recruitment Board's Non-Technical Popular Categories (Graduate) recruitment for 2024.</p>
+
+<ul>
+  <li>8,113 Vacancies</li>
+  <li>Application Dates: 14-09-2024 to 13-10-2024</li>
+  <li>Pan India (21 RRB Regions)</li>
+  <li>Commercial cum Ticket Supervisor: 1736 vacancies</li>
+  <li>Station Master: 994 vacancies</li>
+  <li>Goods Train Manager: 3144 vacancies</li>
+  <li>Junior Account Assistant cum Typist: 1507 vacancies</li>
+  <li>Senior Clerk cum Typist: 732 vacancies</li>
+  <li>Application Fee: Rs. 500/- (General), Rs. 250/- (SC/ST/Others)</li>
+  <li>Age Limit: 18 to 36 years (as of 01-01-2025)</li>
+  <li>Online Application Starts: 14-09-2024</li>
+</ul>
     </div>
   );
 }
