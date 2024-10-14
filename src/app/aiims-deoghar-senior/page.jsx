@@ -25,9 +25,9 @@ export default function RecruitmentInfo() {
 
       <h2 className="text-2xl font-bold mb-2">Post Details</h2>
       <div className="mb-4">
-        <p className="font-bold">Name of the Post:</span> AIIMS, Deoghar Senior Resident (Non-Academic) Offline Form 2024</p>
-        <p className="font-bold">Post Date:</span> 14-10-2024</p>
-        <p className="font-bold">Total Vacancy:</span> 101</p>
+        <p className="font-bold">Name of the Post: AIIMS, Deoghar Senior Resident (Non-Academic) Offline Form 2024</p>
+        <p className="font-bold">Post Date: 14-10-2024</p>
+        <p className="font-bold">Total Vacancy: 101</p>
       </div>
 
       <h2 className="text-2xl font-bold mb-2">Brief Information</h2>
