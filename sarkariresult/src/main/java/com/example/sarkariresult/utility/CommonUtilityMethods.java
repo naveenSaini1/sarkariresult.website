@@ -23,6 +23,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.Normalizer;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -62,6 +63,9 @@ public class CommonUtilityMethods {
 
 	public final String PROMPT_FOR_ALERTNATE_TITLE = "Generate a concise headline for an \" %s\" . Keep it informative and engaging. limit only 1";
 
+	public final String PROMPT_FOR_META_DESCRIPTION =	"Generate the meta descritpion an  \" %s\" . Keep it informative and engaging. limit only 200 character";
+	
+	public final String PROMPT_FOR_META_KEYWORDS	=	"Generate the meta keywords an   \" %s\" .  Keep it informative and engaging. each keyword in string double quote commpan seprated  only 20 keywords , No additional explanations or text.";
 	
 	// Define a set of common stop words to be removed from the slug
     private static final Set<String> STOP_WORDS = new HashSet<>(Arrays.asList(
@@ -72,7 +76,7 @@ public class CommonUtilityMethods {
 
 
     // Maximum length for the slug
-    private static final int MAX_SLUG_LENGTH = 50;
+    private static final int MAX_SLUG_LENGTH = 35;
 
     public static String toSlug(String title) {
         // Step 1: Convert the title to lowercase
@@ -275,7 +279,7 @@ public class CommonUtilityMethods {
 		
 	}
 	
-	public void makeLayOutFile(String title,String fileName) {
+	public void makeLayOutFile(String title,String fileName,String description,String keywords) {
 		String fullPath=folderPath+File.separator+fileName;
 		File dir = new File(fullPath);
 		if(!dir.exists()) {
@@ -287,7 +291,7 @@ public class CommonUtilityMethods {
             File file1 = new File(fullPath+File.separator+"layout.jsx");
             FileWriter fileWriter = new FileWriter(file1);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write("import { BASE_URL } from \"@/constant/ClientUrl\";export const metadata = {metadataBase:new URL(BASE_URL + \"/ "+fileName+"\"),keywords:[\"sarkariresult\",\"sarkariresult website\",\"sarkari result\",\"goverment jobs\",\"free job alert\",\"haryanan Jobs\"], title: { default:\" "+title.trim()+"| sarkariresult.website"+" \",      template: `"+"%s | sarkarresult.website"+"`   },openGraph: {description: 'apply for online goverment jobs find the details of the goverment jobs', openGraphImage:{image:[\"/public/logo.png\"]} }};export default function admitCardLayout({ children }) { return (<><section className=\"text-center overflow-y-scroll\">{children}</section> </>   );}");
+            bufferedWriter.write("import { BASE_URL } from \"@/constant/ClientUrl\";import SinglePageKeywords from \"@/components/Keywords/SinglePageKeyword\"; export const metadata = {metadataBase:new URL(BASE_URL + \"/ "+fileName+"\"),keywords:["+keywords.trim()+"], description:\" "+description.trim()+" \", title: { default:\" "+title.trim()+"| sarkariresult.website"+" \",      template: `"+"%s | sarkarresult.website"+"`   },openGraph: {description: 'apply for online goverment jobs find the details of the goverment jobs', openGraphImage:{image:[\"/public/logo.png\"]} }};export default function admitCardLayout({ children }) { return (<><section className=\"text-center overflow-y-scroll\">{children}</section><section><SinglePageKeywords/></section> </>   );}");
             bufferedWriter.close();
         } catch (IOException e) {
         	System.out.println(e.getMessage());
@@ -376,6 +380,13 @@ public class CommonUtilityMethods {
 		        System.out.println(response.getBody());
 		}
 
+		
+		public String[] getTheMetaDescritpionAndKeywords(String content) {
+			String[]		response		=new String[2];
+			response[0]	=	getTheAiRequest(String.format(PROMPT_FOR_META_DESCRIPTION, content));
+			response[1] =   getTheAiRequest(String.format(PROMPT_FOR_META_KEYWORDS, content));
+			return response;
+		}
 	
     
 }

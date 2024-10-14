@@ -54,7 +54,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 			+ "\n"
 			+ "Use Tailwind CSS for styling. The component should:\n"
 			+ "\n"
-			+ "1. Be SEO-friendly with a clear structure (headings, paragraphs, lists)\n"
+			+ "1. Be SEO-friendly synonums words with a clear structure (headings, paragraphs, lists , important keypoints no other post links)\n"
 			+ "2. Use Tailwind CSS classes for all styling (no inline CSS)\n"
 			+ "3. Include a title, post details, brief information, application fee, important dates, and vacancy details as present in the HTML\n"
 			+ "4. Format tables using Tailwind CSS classes\n"
@@ -69,6 +69,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 			+ "13 remove all the images and chagnes the word synonoums so no plagrisom ocure"
 			+ "14 The generated code should be free from syntax errors and should be ready to use in a Next.js project without requiring further modification."
 			+ "15. Provide only the JSX code inside the component function, without surrounding HTML, head, or body tags\n"
+			+ "16 SEO-friendly elements such as: A summary paragraph highlighting the opportunity , A 'Key Highlights' section with bullet points of crucial information. , A list of relevant keywords at the bottom."
 			+ "\n"
 			+ "Use this structure:\n"
 			+ "\n"
@@ -195,6 +196,7 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 		 String			expiaryDate		=	"";
 		 HashSet<String>category		=	new HashSet<>();
 		 String			dbUrl			=	null;
+		 String[]		metaDesAKey		=	new String[2];
 		 Integer		isNeedToCommit	=	0;
 
 		 originalTitle	=	title;
@@ -220,8 +222,9 @@ public class TodayUpdateServiceImpl implements TodayUpdateService {
 		 dbUrl			=	postRepo.checkIfThePostIsPresent(href);
 		 if(dbUrl==null) {
 			 insertedId		=	postRepo.insertIntoPost(href,originalTitle, url, newTitle,totalPost,active,expiaryDate);
-	    	 commonUtilityMethods.makeFile(url, content[0]);
-			 commonUtilityMethods.makeLayOutFile(newTitle, url);
+	    	 				commonUtilityMethods.makeFile(url, content[0]);
+	    	 metaDesAKey =	commonUtilityMethods.getTheMetaDescritpionAndKeywords(content[0]);
+				 			commonUtilityMethods.makeLayOutFile(newTitle, url,metaDesAKey[0],metaDesAKey[1]);
 			 // sending the Messages
 			 if(category.size()>0)
 				 InsertIntoCoursePost(category, originalTitle);

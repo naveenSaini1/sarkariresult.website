@@ -47,9 +47,9 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			+ "\n"
 			+ "Use Tailwind CSS for styling. The component should:\n"
 			+ "\n"
-			+ "1. Be SEO-friendly with a clear structure (headings, paragraphs, lists)\n"
+			+ "1. Be SEO-friendly synonums words with a clear structure (headings, paragraphs, lists , important keypoints no other post links)\n"
 			+ "2. Use Tailwind CSS classes for all styling (no inline CSS)\n"
-			+ "3. Include a title, post details, brief information, application fee, important dates, and vacancy details as present in the HTML\n"
+			+ "3. Include a title, post details, brief information, application fee, important dates, and vacancy details as present in the HTML,  Tables with vacancy details for different positions and regions.\n"
 			+ "4. Format tables using Tailwind CSS classes\n"
 			+ "5. Color all links blue using Tailwind classes\n"
 			+ "6. Remove any content related to WhatsApp, Telegram, social media, or Play Store\n"
@@ -61,6 +61,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			+ "12 All the open tag brackets have close brackets"
 			+ "13 The generated code should be free from syntax errors and should be ready to use in a Next.js project without requiring further modification."
 			+ "14. Provide only the JSX code inside the component function, without surrounding HTML, head, or body tags\n"
+			+ "15 SEO-friendly elements such as: A summary paragraph highlighting the opportunity , A 'Key Highlights' section with bullet points of crucial information. , A list of relevant keywords at the bottom."
 			+ "\n"
 			+ "Use this structure:\n"
 			+ "\n"
@@ -258,6 +259,7 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 			 Integer		insertedId		=	0;
 			 Integer		totalPost		=	0;
 			 String			expiaryDate		=	"";
+			 String[]		metaDesAKey		=	new String[2];
 			 HashSet<String>category		=	new HashSet<>();
 			 originalTitle	=	title;
 			 System.out.println(originalTitle);
@@ -284,8 +286,9 @@ public class ScrabDataServiceImpl  implements ScrabDataService{
 	
 			 
 			 if(insertedId!=0) {
-				 commonUtilityMethods.makeFile(url, content[0]);
-				 commonUtilityMethods.makeLayOutFile(newTitle, url);
+				 				 commonUtilityMethods.makeFile(url, content[0]);
+				 metaDesAKey=	 commonUtilityMethods.getTheMetaDescritpionAndKeywords(content[0]);
+				 				 commonUtilityMethods.makeLayOutFile(newTitle, url,metaDesAKey[0],metaDesAKey[1]);
 				 // sending the Messages
 				 String messages =	"Important Notice Alert 🔔 \n"+newTitle+"\n "+BASE_URL+"/"+url;
 				 commonUtilityMethods.sendMessage(messages);
