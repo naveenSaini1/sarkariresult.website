@@ -63,9 +63,9 @@ const LogoHeaderSection = async () => {
                         })}
 
                     </ul>
-                    <ul className="flex mt-1">
+                    {/* <ul className="flex mt-1">
                         <li className="bg-thridBgColor  text-xl px-3 py-2 rounded-xl hover:bg-primaryBgColor hover:text-black text-primaryTxtColor shadow-lg"><Link href={"/category/collage-admissom/?page=1"}> Collage Addmissions</Link></li>
-                    </ul>
+                    </ul> */}
 
 
                 </section>
