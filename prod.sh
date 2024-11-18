@@ -16,19 +16,19 @@ git commit -m "init"
 
 git push origin master
 
-sudo git pull origin master
-
 # Install Node.js packages
 sudo npm install
 
+# sudo pm2 start npm --name "sarkari" -- run dev
+
 # Build the Node.js application
-sudo npm run build ||  { echo "npm run build failed, exiting..."; exit 1; }
+# sudo npm run build ||  { echo "npm run build failed, exiting..."; exit 1; }
 
 # Delete all running pm2 processes
-sudo pm2 delete all
+# sudo pm2 delete all
 
 # Start the Node.js application with pm2 and name it "sarkari"
-sudo pm2 start npm --name "sarkari" -- start
+# sudo pm2 start npm --name "sarkari" -- start
 
 
 # cd sarkariresult/
